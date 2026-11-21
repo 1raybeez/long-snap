@@ -1,0 +1,644 @@
+{
+ "name": "Harbor City FFL",
+ "short": "HC",
+ "motto": "Auction keeper since 2011",
+ "place": "Harbor City",
+ "founded": 2011,
+ "colors": {
+  "nav": "#071a33",
+  "accent": "#fbbf24",
+  "brand": "#ea580c"
+ },
+ "divisions": [
+  "Lakeside",
+  "Ridgeline",
+  "Old Mill"
+ ],
+ "seeding": [
+  {
+   "since": 2022,
+   "until": 2024,
+   "summary": "3 division winners, then 3 more by record.",
+   "steps": [
+    {
+     "count": 3,
+     "by": "division_winner"
+    },
+    {
+     "count": 3,
+     "by": "record"
+    }
+   ]
+  },
+  {
+   "since": 2025,
+   "summary": "3 division winners, then 1 by record, then 2 by points for. Seeds 1 and 2 get a bye.",
+   "steps": [
+    {
+     "count": 3,
+     "by": "division_winner"
+    },
+    {
+     "count": 1,
+     "by": "record"
+    },
+    {
+     "count": 2,
+     "by": "points_for"
+    }
+   ]
+  }
+ ],
+ "veto": {
+  "needed": 6,
+  "of": 10,
+  "hours": 24
+ },
+ "persona": "The Harbor Herald",
+ "type": "auction",
+ "keepers": {
+  "kind": "price",
+  "max": 2,
+  "per_position": 1,
+  "increment": 10
+ },
+ "taxi": null,
+ "rookie_rounds": null,
+ "vetoes": [
+  {
+   "season": 2022,
+   "week": 5,
+   "transaction_id": "au20220020",
+   "teams": [
+    11,
+    6
+   ],
+   "adds": {
+    "8144": 6,
+    "6790": 11
+   },
+   "votes_to_veto": [],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 7,
+   "transaction_id": "au20220036",
+   "teams": [
+    4,
+    12
+   ],
+   "adds": {
+    "5536": 12,
+    "4089": 4
+   },
+   "votes_to_veto": [
+    1
+   ],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 10,
+   "transaction_id": "au20220071",
+   "teams": [
+    5,
+    12
+   ],
+   "adds": {
+    "5947": 12,
+    "6820": 5
+   },
+   "votes_to_veto": [
+    6
+   ],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 11,
+   "transaction_id": "au20220086",
+   "teams": [
+    9,
+    4
+   ],
+   "adds": {
+    "2216": 4,
+    "6151": 9
+   },
+   "votes_to_veto": [],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 4,
+   "transaction_id": "au20230020",
+   "teams": [
+    8,
+    6
+   ],
+   "adds": {
+    "5844": 6,
+    "3198": 8
+   },
+   "votes_to_veto": [
+    1,
+    9
+   ],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 5,
+   "transaction_id": "au20230024",
+   "teams": [
+    2,
+    5
+   ],
+   "adds": {
+    "4068": 5,
+    "8143": 2
+   },
+   "votes_to_veto": [],
+   "needed": 5,
+   "eligible": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 6,
+   "transaction_id": "au20230032",
+   "teams": [
+    7,
+    6
+   ],
+   "adds": {
+    "8155": 6,
+    "4066": 7
+   },
+   "votes_to_veto": [
+    9
+   ],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 8,
+   "transaction_id": "au20230051",
+   "teams": [
+    4,
+    11
+   ],
+   "adds": {
+    "5967": 11,
+    "6786": 4
+   },
+   "votes_to_veto": [
+    2,
+    10
+   ],
+   "needed": 5,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 4,
+   "transaction_id": "au20240017",
+   "teams": [
+    1,
+    4
+   ],
+   "adds": {
+    "8143": 4,
+    "8112": 1
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 8,
+   "transaction_id": "au20240049",
+   "teams": [
+    5,
+    11
+   ],
+   "adds": {
+    "7588": 11,
+    "11604": 5
+   },
+   "votes_to_veto": [
+    1,
+    2,
+    3,
+    7,
+    9,
+    10,
+    12
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "result": "vetoed"
+  },
+  {
+   "season": 2024,
+   "week": 9,
+   "transaction_id": "au20240058",
+   "teams": [
+    4,
+    12
+   ],
+   "adds": {
+    "8143": 12,
+    "8142": 4
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 11,
+   "transaction_id": "au20240082",
+   "teams": [
+    2,
+    9
+   ],
+   "adds": {
+    "7611": 9,
+    "5872": 2
+   },
+   "votes_to_veto": [
+    6,
+    7,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "transaction_id": "au20250017",
+   "teams": [
+    11,
+    12
+   ],
+   "adds": {
+    "2133": 12,
+    "8155": 11
+   },
+   "votes_to_veto": [
+    4,
+    7
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "transaction_id": "au20250033",
+   "teams": [
+    6,
+    4
+   ],
+   "adds": {
+    "7564": 4,
+    "9226": 6
+   },
+   "votes_to_veto": [
+    7,
+    10,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 9,
+   "transaction_id": "au20250056",
+   "teams": [
+    9,
+    5
+   ],
+   "adds": {
+    "11560": 5,
+    "7588": 9
+   },
+   "votes_to_veto": [
+    10
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 11,
+   "transaction_id": "au20250073",
+   "teams": [
+    5,
+    1
+   ],
+   "adds": {
+    "10859": 1,
+    "11620": 5
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2026,
+   "week": 6,
+   "transaction_id": "au20260025",
+   "teams": [
+    10,
+    1
+   ],
+   "adds": {
+    "8144": 1,
+    "6790": 10
+   },
+   "votes_to_veto": [
+    5
+   ],
+   "needed": 6,
+   "eligible": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2026,
+   "week": 10,
+   "transaction_id": "au20260056",
+   "teams": [
+    2,
+    4
+   ],
+   "adds": {
+    "4983": 4,
+    "12474": 2
+   },
+   "votes_to_veto": [
+    1,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "vetoed"
+  },
+  {
+   "season": 2026,
+   "week": 11,
+   "transaction_id": "au20260066",
+   "teams": [
+    9,
+    4
+   ],
+   "adds": {
+    "8228": 4,
+    "8167": 9
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  }
+ ]
+}

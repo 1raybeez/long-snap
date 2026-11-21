@@ -1,0 +1,647 @@
+{
+ "name": "Mill Creek FFL",
+ "short": "MC",
+ "motto": "Keepers since 2014",
+ "place": "Mill Creek",
+ "founded": 2014,
+ "colors": {
+  "nav": "#14301f",
+  "accent": "#facc15",
+  "brand": "#15803d"
+ },
+ "divisions": [
+  "Upstream",
+  "Downstream"
+ ],
+ "seeding": [
+  {
+   "since": 2022,
+   "summary": "2 division winners, then 2 by record, then 2 by points for. Seeds 1 and 2 get a bye.",
+   "steps": [
+    {
+     "count": 2,
+     "by": "division_winner"
+    },
+    {
+     "count": 2,
+     "by": "record"
+    },
+    {
+     "count": 2,
+     "by": "points_for"
+    }
+   ]
+  }
+ ],
+ "veto": {
+  "needed": 6,
+  "of": 10,
+  "hours": 48
+ },
+ "persona": "The Mill Creek Ledger",
+ "type": "keeper",
+ "keepers": {
+  "kind": "round",
+  "max": 3,
+  "undrafted_round": 10
+ },
+ "taxi": null,
+ "rookie_rounds": null,
+ "vetoes": [
+  {
+   "season": 2022,
+   "week": 3,
+   "transaction_id": "ke20220011",
+   "teams": [
+    4,
+    8
+   ],
+   "adds": {
+    "7543": 8,
+    "8144": 4
+   },
+   "votes_to_veto": [
+    7
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 5,
+   "transaction_id": "ke20220022",
+   "teams": [
+    5,
+    6
+   ],
+   "adds": {
+    "7528": 6,
+    "7571": 5
+   },
+   "votes_to_veto": [
+    1,
+    3,
+    10
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 8,
+   "transaction_id": "ke20220044",
+   "teams": [
+    3,
+    12
+   ],
+   "adds": {
+    "7526": 12,
+    "7611": 3
+   },
+   "votes_to_veto": [
+    4,
+    10,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2022,
+   "week": 11,
+   "transaction_id": "ke20220075",
+   "teams": [
+    2,
+    8
+   ],
+   "adds": {
+    "6803": 8,
+    "7543": 2
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 3,
+   "transaction_id": "ke20230014",
+   "teams": [
+    4,
+    3
+   ],
+   "adds": {
+    "8150": 3,
+    "2133": 4
+   },
+   "votes_to_veto": [
+    8
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 4,
+   "transaction_id": "ke20230020",
+   "teams": [
+    4,
+    3
+   ],
+   "adds": {
+    "5927": 3,
+    "8132": 4
+   },
+   "votes_to_veto": [],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 7,
+   "transaction_id": "ke20230035",
+   "teams": [
+    11,
+    5
+   ],
+   "adds": {
+    "2216": 5,
+    "5892": 11
+   },
+   "votes_to_veto": [
+    3,
+    7,
+    8
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2023,
+   "week": 9,
+   "transaction_id": "ke20230050",
+   "teams": [
+    9,
+    2
+   ],
+   "adds": {
+    "4950": 2,
+    "4111": 9
+   },
+   "votes_to_veto": [
+    7,
+    11,
+    12
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 5,
+   "transaction_id": "ke20240022",
+   "teams": [
+    9,
+    8
+   ],
+   "adds": {
+    "9997": 8,
+    "11576": 9
+   },
+   "votes_to_veto": [
+    7
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 6,
+   "transaction_id": "ke20240030",
+   "teams": [
+    8,
+    4
+   ],
+   "adds": {
+    "5859": 4,
+    "6813": 8
+   },
+   "votes_to_veto": [
+    1,
+    2,
+    3,
+    5,
+    7,
+    10,
+    11,
+    12
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "vetoed"
+  },
+  {
+   "season": 2024,
+   "week": 9,
+   "transaction_id": "ke20240058",
+   "teams": [
+    1,
+    8
+   ],
+   "adds": {
+    "7594": 8,
+    "4217": 1
+   },
+   "votes_to_veto": [
+    2,
+    4
+   ],
+   "needed": 6,
+   "eligible": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2024,
+   "week": 11,
+   "transaction_id": "ke20240082",
+   "teams": [
+    1,
+    3
+   ],
+   "adds": {
+    "5185": 3,
+    "11655": 1
+   },
+   "votes_to_veto": [
+    2,
+    8,
+    12
+   ],
+   "needed": 6,
+   "eligible": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 3,
+   "transaction_id": "ke20250007",
+   "teams": [
+    5,
+    4
+   ],
+   "adds": {
+    "9221": 4,
+    "9754": 5
+   },
+   "votes_to_veto": [
+    3,
+    12
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 5,
+   "transaction_id": "ke20250018",
+   "teams": [
+    5,
+    3
+   ],
+   "adds": {
+    "7567": 3,
+    "7525": 5
+   },
+   "votes_to_veto": [
+    8
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "transaction_id": "ke20250038",
+   "teams": [
+    2,
+    12
+   ],
+   "adds": {
+    "6806": 12,
+    "5927": 2
+   },
+   "votes_to_veto": [
+    5,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "transaction_id": "ke20250072",
+   "teams": [
+    7,
+    6
+   ],
+   "adds": {
+    "9224": 6,
+    "6786": 7
+   },
+   "votes_to_veto": [
+    8,
+    11
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2026,
+   "week": 5,
+   "transaction_id": "ke20260021",
+   "teams": [
+    11,
+    4
+   ],
+   "adds": {
+    "4983": 4,
+    "11435": 11
+   },
+   "votes_to_veto": [
+    7,
+    8
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+   ],
+   "result": "approved"
+  },
+  {
+   "season": 2026,
+   "week": 7,
+   "transaction_id": "ke20260038",
+   "teams": [
+    12,
+    11
+   ],
+   "adds": {
+    "11624": 11,
+    "11435": 12
+   },
+   "votes_to_veto": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    10
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "result": "vetoed"
+  },
+  {
+   "season": 2026,
+   "week": 9,
+   "transaction_id": "ke20260055",
+   "teams": [
+    2,
+    5
+   ],
+   "adds": {
+    "5967": 5,
+    "12526": 2
+   },
+   "votes_to_veto": [
+    3,
+    7,
+    8
+   ],
+   "needed": 6,
+   "eligible": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "result": "approved"
+  }
+ ]
+}

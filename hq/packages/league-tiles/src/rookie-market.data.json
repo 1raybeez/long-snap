@@ -1,0 +1,1364 @@
+{
+ "generatedFrom": "long-country-club approved Draft Intelligence market evidence",
+ "format": "12-team 1QB half-PPR non-TEP dynasty rookie",
+ "seasons": {
+  "2021": {
+   "source": "Fantasy Football Calculator",
+   "snapshotDate": "2021-09-01",
+   "timing": "POST_DRAFT_PRESEASON",
+   "coverageNote": "Only players the league drafted that year have a saved draft-week value.",
+   "players": {
+    "justinfields": {
+     "id": "7591",
+     "name": "Justin Fields",
+     "expected": 7.2
+    },
+    "chubahubbard": {
+     "id": "7594",
+     "name": "Chuba Hubbard",
+     "expected": 22.2
+    },
+    "najeeharris": {
+     "id": "7528",
+     "name": "Najee Harris",
+     "expected": 1.2
+    },
+    "nicocollins": {
+     "id": "7569",
+     "name": "Nico Collins",
+     "expected": 25.9
+    },
+    "tutuatwell": {
+     "id": "7562",
+     "name": "Tutu Atwell",
+     "expected": 30.1
+    },
+    "trevorlawrence": {
+     "id": "7523",
+     "name": "Trevor Lawrence",
+     "expected": 4.7
+    },
+    "amarirodgers": {
+     "id": "7540",
+     "name": "Amari Rodgers",
+     "expected": 24.9
+    },
+    "patfreiermuth": {
+     "id": "7600",
+     "name": "Pat Freiermuth",
+     "expected": 20.3
+    },
+    "jaretpatterson": {
+     "id": "7537",
+     "name": "Jaret Patterson",
+     "expected": 30.7
+    },
+    "amonrastbrown": {
+     "id": "7547",
+     "name": "Amon-Ra St. Brown",
+     "expected": 18.1
+    },
+    "dwayneeskridge": {
+     "id": "7612",
+     "name": "D'Wayne Eskridge",
+     "expected": 28.9
+    },
+    "jaylenwaddle": {
+     "id": "7526",
+     "name": "Jaylen Waddle",
+     "expected": 11
+    },
+    "rondalemoore": {
+     "id": "7601",
+     "name": "Rondale Moore",
+     "expected": 17.3
+    },
+    "rhamondrestevenson": {
+     "id": "7611",
+     "name": "Rhamondre Stevenson",
+     "expected": 27
+    },
+    "michaelcarter": {
+     "id": "7607",
+     "name": "Michael Carter",
+     "expected": 12.6
+    },
+    "treylance": {
+     "id": "7610",
+     "name": "Trey Lance",
+     "expected": 6.6
+    },
+    "javontewilliams": {
+     "id": "7588",
+     "name": "Javonte Williams",
+     "expected": 2.9
+    },
+    "zachwilson": {
+     "id": "7538",
+     "name": "Zach Wilson",
+     "expected": 12.8
+    },
+    "dyamibrown": {
+     "id": "7587",
+     "name": "Dyami Brown",
+     "expected": 17.4
+    },
+    "devontasmith": {
+     "id": "7525",
+     "name": "DeVonta Smith",
+     "expected": 9.9
+    },
+    "treysermon": {
+     "id": "7593",
+     "name": "Trey Sermon",
+     "expected": 9.9
+    },
+    "elijahmoore": {
+     "id": "7596",
+     "name": "Elijah Moore",
+     "expected": 15.4
+    },
+    "kylepitts": {
+     "id": "7553",
+     "name": "Kyle Pitts",
+     "expected": 2.6
+    },
+    "terracemarshall": {
+     "id": "7565",
+     "name": "Terrace Marshall",
+     "expected": 13.7
+    },
+    "javianhawkins": {
+     "id": "7563",
+     "name": "Javian Hawkins",
+     "expected": 26.4
+    },
+    "jamarrchase": {
+     "id": "7564",
+     "name": "Ja'Marr Chase",
+     "expected": 3.5
+    },
+    "macjones": {
+     "id": "7527",
+     "name": "Mac Jones",
+     "expected": 15.5
+    },
+    "kadariustoney": {
+     "id": "7606",
+     "name": "Kadarius Toney",
+     "expected": 19.7
+    }
+   }
+  },
+  "2022": {
+   "source": "Fantasy Football Calculator",
+   "snapshotDate": "2022-09-04",
+   "timing": "POST_DRAFT_PRESEASON",
+   "coverageNote": "Only players the league drafted that year have a saved draft-week value.",
+   "players": {
+    "chrisolave": {
+     "id": "8144",
+     "name": "Chris Olave",
+     "expected": 6.9
+    },
+    "malikwillis": {
+     "id": "8161",
+     "name": "Malik Willis",
+     "expected": 22.5
+    },
+    "jalentolbert": {
+     "id": "8117",
+     "name": "Jalen Tolbert",
+     "expected": 20
+    },
+    "khalilshakir": {
+     "id": "8134",
+     "name": "Khalil Shakir",
+     "expected": 28.3
+    },
+    "skyymoore": {
+     "id": "8168",
+     "name": "Skyy Moore",
+     "expected": 8.1
+    },
+    "brianrobinson": {
+     "id": "8154",
+     "name": "Brian Robinson",
+     "expected": 22.1
+    },
+    "tyquanthornton": {
+     "id": "8188",
+     "name": "Tyquan Thornton",
+     "expected": 29.2
+    },
+    "jamesonwilliams": {
+     "id": "8148",
+     "name": "Jameson Williams",
+     "expected": 5.8
+    },
+    "dameonpierce": {
+     "id": "8129",
+     "name": "Dameon Pierce",
+     "expected": 12.9
+    },
+    "davidbell": {
+     "id": "8118",
+     "name": "David Bell",
+     "expected": 13.4
+    },
+    "pierrestrong": {
+     "id": "8116",
+     "name": "Pierre Strong",
+     "expected": 30.2
+    },
+    "jelaniwoods": {
+     "id": "8219",
+     "name": "Jelani Woods",
+     "expected": 29
+    },
+    "rachaadwhite": {
+     "id": "8136",
+     "name": "Rachaad White",
+     "expected": 12.1
+    },
+    "kennypickett": {
+     "id": "8160",
+     "name": "Kenny Pickett",
+     "expected": 14.4
+    },
+    "tylerallgeier": {
+     "id": "8132",
+     "name": "Tyler Allgeier",
+     "expected": 23.2
+    },
+    "drakelondon": {
+     "id": "8112",
+     "name": "Drake London",
+     "expected": 2.4
+    },
+    "isaiahspiller": {
+     "id": "8153",
+     "name": "Isaiah Spiller",
+     "expected": 15.8
+    },
+    "romeodoubs": {
+     "id": "8121",
+     "name": "Romeo Doubs",
+     "expected": 27.5
+    },
+    "mattcorral": {
+     "id": "8164",
+     "name": "Matt Corral",
+     "expected": 25.4
+    },
+    "jamescook": {
+     "id": "8138",
+     "name": "James Cook",
+     "expected": 11.1
+    },
+    "jahandotson": {
+     "id": "8119",
+     "name": "Jahan Dotson",
+     "expected": 12
+    },
+    "gregdulcich": {
+     "id": "8172",
+     "name": "Greg Dulcich",
+     "expected": 30.9
+    },
+    "treylonburks": {
+     "id": "8135",
+     "name": "Treylon Burks",
+     "expected": 4.2
+    },
+    "zamirwhite": {
+     "id": "8139",
+     "name": "Zamir White",
+     "expected": 21.2
+    },
+    "desmondridder": {
+     "id": "8159",
+     "name": "Desmond Ridder",
+     "expected": 26.2
+    },
+    "treymcbride": {
+     "id": "8130",
+     "name": "Trey McBride",
+     "expected": 17.4
+    },
+    "hassanhaskins": {
+     "id": "8123",
+     "name": "Hassan Haskins",
+     "expected": 33.4
+    },
+    "christianwatson": {
+     "id": "8167",
+     "name": "Christian Watson",
+     "expected": 10.2
+    },
+    "alecpierce": {
+     "id": "8142",
+     "name": "Alec Pierce",
+     "expected": 18.6
+    },
+    "tyriondavisprice": {
+     "id": "8211",
+     "name": "Tyrion Davis-Price",
+     "expected": 35.4
+    },
+    "breecehall": {
+     "id": "8155",
+     "name": "Breece Hall",
+     "expected": 1.3
+    },
+    "georgepickens": {
+     "id": "8137",
+     "name": "George Pickens",
+     "expected": 9.6
+    },
+    "wandalerobinson": {
+     "id": "8126",
+     "name": "Wan'Dale Robinson",
+     "expected": 21.4
+    }
+   }
+  },
+  "2023": {
+   "source": "Fantasy Football Calculator",
+   "snapshotDate": "2023-09-01",
+   "timing": "POST_DRAFT_PRESEASON",
+   "coverageNote": "Only players the league drafted that year have a saved draft-week value.",
+   "players": {
+    "zayflowers": {
+     "id": "9997",
+     "name": "Zay Flowers",
+     "expected": 6.4
+    },
+    "samlaporta": {
+     "id": "10859",
+     "name": "Sam LaPorta",
+     "expected": 17
+    },
+    "deucevaughn": {
+     "id": "9505",
+     "name": "Deuce Vaughn",
+     "expected": 31.7
+    },
+    "evanhull": {
+     "id": "9220",
+     "name": "Evan Hull",
+     "expected": 29.5
+    },
+    "zachcharbonnet": {
+     "id": "9753",
+     "name": "Zach Charbonnet",
+     "expected": 7.6
+    },
+    "jaydenreed": {
+     "id": "10222",
+     "name": "Jayden Reed",
+     "expected": 18.5
+    },
+    "michaelwilson": {
+     "id": "10232",
+     "name": "Michael Wilson",
+     "expected": 31.2
+    },
+    "pukanacua": {
+     "id": "9493",
+     "name": "Puka Nacua",
+     "expected": 33.1
+    },
+    "bryceyoung": {
+     "id": "9228",
+     "name": "Bryce Young",
+     "expected": 7.8
+    },
+    "roschonjohnson": {
+     "id": "10235",
+     "name": "Roschon Johnson",
+     "expected": 18.5
+    },
+    "tyjaespears": {
+     "id": "9508",
+     "name": "Tyjae Spears",
+     "expected": 19.6
+    },
+    "devonachane": {
+     "id": "9226",
+     "name": "Devon Achane",
+     "expected": 11.6
+    },
+    "joshdowns": {
+     "id": "9500",
+     "name": "Josh Downs",
+     "expected": 16.2
+    },
+    "parkerwashington": {
+     "id": "9487",
+     "name": "Parker Washington",
+     "expected": 30.2
+    },
+    "anthonyrichardson": {
+     "id": "9229",
+     "name": "Anthony Richardson",
+     "expected": 7.2
+    },
+    "rasheerice": {
+     "id": "10229",
+     "name": "Rashee Rice",
+     "expected": 21.8
+    },
+    "tankbigsby": {
+     "id": "9225",
+     "name": "Tank Bigsby",
+     "expected": 18.2
+    },
+    "ericgray": {
+     "id": "10223",
+     "name": "Eric Gray",
+     "expected": 28.5
+    },
+    "daltonkincaid": {
+     "id": "10236",
+     "name": "Dalton Kincaid",
+     "expected": 11.5
+    },
+    "marvinmims": {
+     "id": "9494",
+     "name": "Marvin Mims",
+     "expected": 13.2
+    },
+    "jordanaddison": {
+     "id": "9756",
+     "name": "Jordan Addison",
+     "expected": 4.5
+    },
+    "michaelmayer": {
+     "id": "9482",
+     "name": "Michael Mayer",
+     "expected": 12.9
+    },
+    "hendonhooker": {
+     "id": "9998",
+     "name": "Hendon Hooker",
+     "expected": 28.2
+    },
+    "cedrictillman": {
+     "id": "10444",
+     "name": "Cedric Tillman",
+     "expected": 26.2
+    },
+    "xavierhutchinson": {
+     "id": "10218",
+     "name": "Xavier Hutchinson",
+     "expected": 30
+    },
+    "seantucker": {
+     "id": "9506",
+     "name": "Sean Tucker",
+     "expected": 32.6
+    },
+    "quentinjohnston": {
+     "id": "9754",
+     "name": "Quentin Johnston",
+     "expected": 5.7
+    },
+    "lukemusgrave": {
+     "id": "9481",
+     "name": "Luke Musgrave",
+     "expected": 27.2
+    },
+    "israelabanikanda": {
+     "id": "9227",
+     "name": "Israel Abanikanda",
+     "expected": 21.2
+    },
+    "jaxonsmithnjigba": {
+     "id": "9488",
+     "name": "Jaxon Smith-Njigba",
+     "expected": 2.7
+    },
+    "kendremiller": {
+     "id": "9757",
+     "name": "Kendre Miller",
+     "expected": 11
+    },
+    "willlevis": {
+     "id": "9999",
+     "name": "Will Levis",
+     "expected": 22.8
+    },
+    "cjstroud": {
+     "id": "9758",
+     "name": "C.J. Stroud",
+     "expected": 6.9
+    },
+    "jahmyrgibbs": {
+     "id": "9221",
+     "name": "Jahmyr Gibbs",
+     "expected": 2
+    },
+    "chasebrown": {
+     "id": "9224",
+     "name": "Chase Brown",
+     "expected": 27.8
+    },
+    "tankdell": {
+     "id": "9502",
+     "name": "Tank Dell",
+     "expected": 28.6
+    },
+    "bijanrobinson": {
+     "id": "9509",
+     "name": "Bijan Robinson",
+     "expected": 1.2
+    },
+    "jonathanmingo": {
+     "id": "10225",
+     "name": "Jonathan Mingo",
+     "expected": 17.7
+    },
+    "jalinhyatt": {
+     "id": "9497",
+     "name": "Jalin Hyatt",
+     "expected": 21.4
+    },
+    "lukeschoonmaker": {
+     "id": "10871",
+     "name": "Luke Schoonmaker",
+     "expected": 31.5
+    }
+   }
+  },
+  "2024": {
+   "source": "Fantasy Football Faceoff",
+   "snapshotDate": "2024-03-14",
+   "timing": "PRE_DRAFT",
+   "coverageNote": "Only players the league drafted that year have a saved draft-week value.",
+   "players": {
+    "rickypearsall": {
+     "id": "11638",
+     "name": "Ricky Pearsall",
+     "expected": 25
+    },
+    "marshawnlloyd": {
+     "id": "11581",
+     "name": "MarShawn Lloyd",
+     "expected": 22
+    },
+    "laddmcconkey": {
+     "id": "11635",
+     "name": "Ladd McConkey",
+     "expected": 8
+    },
+    "drakemaye": {
+     "id": "11564",
+     "name": "Drake Maye",
+     "expected": 15
+    },
+    "maliknabers": {
+     "id": "11632",
+     "name": "Malik Nabers",
+     "expected": 2
+    },
+    "jaylenwright": {
+     "id": "11643",
+     "name": "Jaylen Wright",
+     "expected": 21
+    },
+    "michaelpenix": {
+     "id": "11559",
+     "name": "Michael Penix",
+     "expected": 29
+    },
+    "jonathonbrooks": {
+     "id": "11583",
+     "name": "Jonathon Brooks",
+     "expected": 13
+    },
+    "treybenson": {
+     "id": "11589",
+     "name": "Trey Benson",
+     "expected": 11
+    },
+    "troyfranklin": {
+     "id": "11627",
+     "name": "Troy Franklin",
+     "expected": 9
+    },
+    "adonaimitchell": {
+     "id": "11625",
+     "name": "Adonai Mitchell",
+     "expected": 7
+    },
+    "jalenmcmillan": {
+     "id": "11618",
+     "name": "Jalen McMillan",
+     "expected": 26
+    },
+    "brianthomas": {
+     "id": "11631",
+     "name": "Brian Thomas",
+     "expected": 6
+    },
+    "jalynnpolk": {
+     "id": "11619",
+     "name": "Ja'Lynn Polk",
+     "expected": 24
+    },
+    "xavierworthy": {
+     "id": "11624",
+     "name": "Xavier Worthy",
+     "expected": 10
+    },
+    "jjmccarthy": {
+     "id": "11565",
+     "name": "J.J. McCarthy",
+     "expected": 28
+    },
+    "braelonallen": {
+     "id": "11576",
+     "name": "Braelon Allen",
+     "expected": 19
+    },
+    "devontezwalker": {
+     "id": "11629",
+     "name": "Devontez Walker",
+     "expected": 23
+    },
+    "jaydendaniels": {
+     "id": "11566",
+     "name": "Jayden Daniels",
+     "expected": 18
+    },
+    "brendenrice": {
+     "id": "11621",
+     "name": "Brenden Rice",
+     "expected": 30
+    },
+    "keoncoleman": {
+     "id": "11637",
+     "name": "Keon Coleman",
+     "expected": 12
+    },
+    "marvinharrison": {
+     "id": "11628",
+     "name": "Marvin Harrison",
+     "expected": 1
+    },
+    "romeodunze": {
+     "id": "11620",
+     "name": "Rome Odunze",
+     "expected": 3
+    },
+    "brockbowers": {
+     "id": "11604",
+     "name": "Brock Bowers",
+     "expected": 4
+    },
+    "romanwilson": {
+     "id": "11630",
+     "name": "Roman Wilson",
+     "expected": 17
+    },
+    "calebwilliams": {
+     "id": "11560",
+     "name": "Caleb Williams",
+     "expected": 5
+    },
+    "xavierlegette": {
+     "id": "11626",
+     "name": "Xavier Legette",
+     "expected": 16
+    },
+    "blakecorum": {
+     "id": "11586",
+     "name": "Blake Corum",
+     "expected": 14
+    },
+    "jatavionsanders": {
+     "id": "11600",
+     "name": "Ja'Tavion Sanders",
+     "expected": 20
+    },
+    "malachicorley": {
+     "id": "11617",
+     "name": "Malachi Corley",
+     "expected": 27
+    }
+   }
+  },
+  "2025": {
+   "source": "Fantasy Football Calculator",
+   "snapshotDate": "2025-09-01",
+   "timing": "POST_DRAFT_PRESEASON",
+   "coverageNote": "Only players the league drafted that year have a saved draft-week value.",
+   "players": {
+    "jaydonblue": {
+     "id": "12457",
+     "name": "Jaydon Blue",
+     "expected": 22.2
+    },
+    "jaxsondart": {
+     "id": "12508",
+     "name": "Jaxson Dart",
+     "expected": 18.1
+    },
+    "patbryant": {
+     "id": "12492",
+     "name": "Pat Bryant",
+     "expected": 31.1
+    },
+    "kalebjohnson": {
+     "id": "12504",
+     "name": "Kaleb Johnson",
+     "expected": 7.6
+    },
+    "lutherburden": {
+     "id": "12519",
+     "name": "Luther Burden",
+     "expected": 12.2
+    },
+    "dylansampson": {
+     "id": "12469",
+     "name": "Dylan Sampson",
+     "expected": 22.9
+    },
+    "tylershough": {
+     "id": "12545",
+     "name": "Tyler Shough",
+     "expected": 31
+    },
+    "olliegordon": {
+     "id": "12495",
+     "name": "Ollie Gordon",
+     "expected": 30.6
+    },
+    "omarionhampton": {
+     "id": "12507",
+     "name": "Omarion Hampton",
+     "expected": 2.3
+    },
+    "matthewgolden": {
+     "id": "12501",
+     "name": "Matthew Golden",
+     "expected": 11.6
+    },
+    "masontaylor": {
+     "id": "12498",
+     "name": "Mason Taylor",
+     "expected": 25.9
+    },
+    "jordanjames": {
+     "id": "12467",
+     "name": "Jordan James",
+     "expected": 31.3
+    },
+    "camskattebo": {
+     "id": "12481",
+     "name": "Cam Skattebo",
+     "expected": 17.1
+    },
+    "shedeursanders": {
+     "id": "12524",
+     "name": "Shedeur Sanders",
+     "expected": 32.6
+    },
+    "emekaegbuka": {
+     "id": "12514",
+     "name": "Emeka Egbuka",
+     "expected": 6.2
+    },
+    "bhayshultuten": {
+     "id": "12490",
+     "name": "Bhayshul Tuten",
+     "expected": 20.1
+    },
+    "haroldfannin": {
+     "id": "12506",
+     "name": "Harold Fannin",
+     "expected": 29
+    },
+    "tylerwarren": {
+     "id": "12518",
+     "name": "Tyler Warren",
+     "expected": 5.8
+    },
+    "kylewilliams": {
+     "id": "12547",
+     "name": "Kyle Williams",
+     "expected": 19.3
+    },
+    "treveyonhenderson": {
+     "id": "12529",
+     "name": "TreVeyon Henderson",
+     "expected": 4.8
+    },
+    "rjharvey": {
+     "id": "12489",
+     "name": "RJ Harvey",
+     "expected": 9.3
+    },
+    "jaydenhiggins": {
+     "id": "12484",
+     "name": "Jayden Higgins",
+     "expected": 16.1
+    },
+    "terranceferguson": {
+     "id": "12487",
+     "name": "Terrance Ferguson",
+     "expected": 31
+    },
+    "jalenmilroe": {
+     "id": "12510",
+     "name": "Jalen Milroe",
+     "expected": 23.2
+    },
+    "elicayomanor": {
+     "id": "12499",
+     "name": "Elic Ayomanor",
+     "expected": 27
+    },
+    "quinshonjudkins": {
+     "id": "12512",
+     "name": "Quinshon Judkins",
+     "expected": 7
+    },
+    "treharris": {
+     "id": "12509",
+     "name": "Tre Harris",
+     "expected": 15.8
+    },
+    "ashtonjeanty": {
+     "id": "12527",
+     "name": "Ashton Jeanty",
+     "expected": 1.2
+    },
+    "colstonloveland": {
+     "id": "12517",
+     "name": "Colston Loveland",
+     "expected": 12
+    },
+    "tetairoamcmillan": {
+     "id": "12526",
+     "name": "Tetairoa McMillan",
+     "expected": 4.5
+    }
+   }
+  },
+  "2026": {
+   "source": "RotoBaller, Sports Illustrated, Fantasy Football Nerds, The Flex Spot",
+   "snapshotDate": "2026-05-29",
+   "timing": "DRAFT_DAY_CUTOFF_SAFE",
+   "coverageNote": "Full draft-week rookie board (median of four rankings published before the draft).",
+   "players": {
+    "jeremiyahlove": {
+     "id": null,
+     "name": "Jeremiyah Love",
+     "expected": 1
+    },
+    "carnelltate": {
+     "id": null,
+     "name": "Carnell Tate",
+     "expected": 2
+    },
+    "jordyntyson": {
+     "id": null,
+     "name": "Jordyn Tyson",
+     "expected": 3
+    },
+    "makailemon": {
+     "id": null,
+     "name": "Makai Lemon",
+     "expected": 4
+    },
+    "jadarianprice": {
+     "id": null,
+     "name": "Jadarian Price",
+     "expected": 5
+    },
+    "kcconcepcion": {
+     "id": null,
+     "name": "KC Concepcion",
+     "expected": 7
+    },
+    "fernandomendoza": {
+     "id": null,
+     "name": "Fernando Mendoza",
+     "expected": 9
+    },
+    "omarcooper": {
+     "id": null,
+     "name": "Omar Cooper Jr.",
+     "expected": 8
+    },
+    "kenyonsadiq": {
+     "id": null,
+     "name": "Kenyon Sadiq",
+     "expected": 6
+    },
+    "denzelboston": {
+     "id": null,
+     "name": "Denzel Boston",
+     "expected": 10
+    },
+    "elistowers": {
+     "id": null,
+     "name": "Eli Stowers",
+     "expected": 11
+    },
+    "antoniowilliams": {
+     "id": null,
+     "name": "Antonio Williams",
+     "expected": 14
+    },
+    "germiebernard": {
+     "id": null,
+     "name": "Germie Bernard",
+     "expected": 13
+    },
+    "chrisbell": {
+     "id": null,
+     "name": "Chris Bell",
+     "expected": 16
+    },
+    "jonahcoleman": {
+     "id": null,
+     "name": "Jonah Coleman",
+     "expected": 15
+    },
+    "dezhaunstribling": {
+     "id": null,
+     "name": "De'Zhaun Stribling",
+     "expected": 12
+    },
+    "tysimpson": {
+     "id": null,
+     "name": "Ty Simpson",
+     "expected": 18
+    },
+    "chrisbrazzell": {
+     "id": null,
+     "name": "Chris Brazzell II",
+     "expected": 19
+    },
+    "kaelonblack": {
+     "id": null,
+     "name": "Kaelon Black",
+     "expected": 20
+    },
+    "zachariahbranch": {
+     "id": null,
+     "name": "Zachariah Branch",
+     "expected": 21
+    },
+    "tedhurst": {
+     "id": null,
+     "name": "Ted Hurst",
+     "expected": 24
+    },
+    "nicholassingleton": {
+     "id": null,
+     "name": "Nicholas Singleton",
+     "expected": 17
+    },
+    "emmettjohnson": {
+     "id": null,
+     "name": "Emmett Johnson",
+     "expected": 26
+    },
+    "malachifields": {
+     "id": null,
+     "name": "Malachi Fields",
+     "expected": 22
+    },
+    "mikewashington": {
+     "id": null,
+     "name": "Mike Washington Jr.",
+     "expected": 25
+    },
+    "elijahsarratt": {
+     "id": null,
+     "name": "Elijah Sarratt",
+     "expected": 29
+    },
+    "jakobilane": {
+     "id": null,
+     "name": "Ja'Kobi Lane",
+     "expected": 27
+    },
+    "brenenthompson": {
+     "id": null,
+     "name": "Brenen Thompson",
+     "expected": 31
+    },
+    "kaytronallen": {
+     "id": null,
+     "name": "Kaytron Allen",
+     "expected": 23
+    },
+    "demondclaiborne": {
+     "id": null,
+     "name": "Demond Claiborne",
+     "expected": 34
+    },
+    "skylerbell": {
+     "id": null,
+     "name": "Skyler Bell",
+     "expected": 28
+    },
+    "brycelance": {
+     "id": null,
+     "name": "Bryce Lance",
+     "expected": 35
+    },
+    "adamrandall": {
+     "id": null,
+     "name": "Adam Randall",
+     "expected": 30
+    },
+    "maxklare": {
+     "id": null,
+     "name": "Max Klare",
+     "expected": 32
+    },
+    "carsonbeck": {
+     "id": null,
+     "name": "Carson Beck",
+     "expected": 36
+    },
+    "kevincoleman": {
+     "id": null,
+     "name": "Kevin Coleman Jr.",
+     "expected": 37
+    },
+    "drewallar": {
+     "id": null,
+     "name": "Drew Allar",
+     "expected": 38
+    },
+    "calebdouglas": {
+     "id": null,
+     "name": "Caleb Douglas",
+     "expected": 33
+    },
+    "oscardelp": {
+     "id": null,
+     "name": "Oscar Delp",
+     "expected": 39
+    },
+    "zavionthomas": {
+     "id": null,
+     "name": "Zavion Thomas",
+     "expected": 40
+    },
+    "eliheidenreich": {
+     "id": null,
+     "name": "Eli Heidenreich",
+     "expected": 47
+    },
+    "eliraridon": {
+     "id": null,
+     "name": "Eli Raridon",
+     "expected": 44
+    },
+    "taylengreen": {
+     "id": null,
+     "name": "Taylen Green",
+     "expected": 42
+    },
+    "sethmcgowan": {
+     "id": null,
+     "name": "Seth McGowan",
+     "expected": 41
+    },
+    "colbieyoung": {
+     "id": null,
+     "name": "Colbie Young",
+     "expected": 45
+    },
+    "colepayton": {
+     "id": null,
+     "name": "Cole Payton",
+     "expected": 48
+    },
+    "joshcameron": {
+     "id": null,
+     "name": "Josh Cameron",
+     "expected": 49
+    },
+    "deionburks": {
+     "id": null,
+     "name": "Deion Burks",
+     "expected": 50
+    },
+    "cyrusallen": {
+     "id": null,
+     "name": "Cyrus Allen",
+     "expected": 52
+    },
+    "justinjoly": {
+     "id": null,
+     "name": "Justin Joly",
+     "expected": 51
+    },
+    "jammiller": {
+     "id": null,
+     "name": "Jam Miller",
+     "expected": 53
+    },
+    "cadeklubnik": {
+     "id": null,
+     "name": "Cade Klubnik",
+     "expected": 54
+    },
+    "tannerkoziol": {
+     "id": null,
+     "name": "Tanner Koziol",
+     "expected": 56
+    },
+    "romanhemby": {
+     "id": null,
+     "name": "Roman Hemby",
+     "expected": 57
+    },
+    "cjdaniels": {
+     "id": null,
+     "name": "CJ Daniels",
+     "expected": 59
+    },
+    "matthewhibner": {
+     "id": null,
+     "name": "Matthew Hibner",
+     "expected": 61
+    },
+    "marlinklein": {
+     "id": null,
+     "name": "Marlin Klein",
+     "expected": 46
+    },
+    "barionbrown": {
+     "id": null,
+     "name": "Barion Brown",
+     "expected": 62
+    },
+    "garrettnussmeier": {
+     "id": null,
+     "name": "Garrett Nussmeier",
+     "expected": 63
+    },
+    "kendricklaw": {
+     "id": null,
+     "name": "Kendrick Law",
+     "expected": 65
+    },
+    "samroush": {
+     "id": null,
+     "name": "Sam Roush",
+     "expected": 60
+    },
+    "jmaritaylor": {
+     "id": null,
+     "name": "J'Mari Taylor",
+     "expected": 66
+    },
+    "nateboerkircher": {
+     "id": null,
+     "name": "Nate Boerkircher",
+     "expected": 55
+    },
+    "malikbenson": {
+     "id": null,
+     "name": "Malik Benson",
+     "expected": 67
+    },
+    "reggievirgil": {
+     "id": null,
+     "name": "Reggie Virgil",
+     "expected": 58
+    },
+    "jeffcaldwell": {
+     "id": null,
+     "name": "Jeff Caldwell",
+     "expected": 68
+    },
+    "lewisbond": {
+     "id": null,
+     "name": "Lewis Bond",
+     "expected": 69
+    },
+    "ericrivers": {
+     "id": null,
+     "name": "Eric Rivers",
+     "expected": 70
+    },
+    "jackendries": {
+     "id": null,
+     "name": "Jack Endries",
+     "expected": 71
+    },
+    "chaseroberts": {
+     "id": null,
+     "name": "Chase Roberts",
+     "expected": 72
+    },
+    "michaeltrigg": {
+     "id": null,
+     "name": "Michael Trigg",
+     "expected": 64
+    },
+    "noahwhittington": {
+     "id": null,
+     "name": "Noah Whittington",
+     "expected": 73
+    },
+    "emmanuelhenderson": {
+     "id": null,
+     "name": "Emmanuel Henderson Jr.",
+     "expected": 74
+    },
+    "cjwilliams": {
+     "id": null,
+     "name": "CJ Williams",
+     "expected": 75
+    },
+    "jaydnott": {
+     "id": null,
+     "name": "Jaydn Ott",
+     "expected": 76
+    },
+    "kadenwetjen": {
+     "id": null,
+     "name": "Kaden Wetjen",
+     "expected": 77
+    },
+    "desmondreid": {
+     "id": null,
+     "name": "Desmond Reid",
+     "expected": 78
+    },
+    "daequanwright": {
+     "id": null,
+     "name": "Dae'Quan Wright",
+     "expected": 79
+    },
+    "terionstewart": {
+     "id": null,
+     "name": "Terion Stewart",
+     "expected": 80
+    },
+    "rahsulfaison": {
+     "id": null,
+     "name": "Rahsul Faison",
+     "expected": 81
+    },
+    "cjdonaldson": {
+     "id": null,
+     "name": "CJ Donaldson",
+     "expected": 82
+    },
+    "dallenbentley": {
+     "id": null,
+     "name": "Dallen Bentley",
+     "expected": 83
+    },
+    "aaronanderson": {
+     "id": null,
+     "name": "Aaron Anderson",
+     "expected": 84
+    },
+    "joeroyer": {
+     "id": null,
+     "name": "Joe Royer",
+     "expected": 85
+    },
+    "ericmcalister": {
+     "id": null,
+     "name": "Eric McAlister",
+     "expected": 86
+    },
+    "jalondaniels": {
+     "id": null,
+     "name": "Jalon Daniels",
+     "expected": 87
+    },
+    "roberthenry": {
+     "id": null,
+     "name": "Robert Henry Jr.",
+     "expected": 88
+    },
+    "jamalhaynes": {
+     "id": null,
+     "name": "Jamal Haynes",
+     "expected": 89
+    },
+    "tyrenmontgomery": {
+     "id": null,
+     "name": "Tyren Montgomery",
+     "expected": 90
+    },
+    "haynesking": {
+     "id": null,
+     "name": "Haynes King",
+     "expected": 91
+    },
+    "harrisonwallace": {
+     "id": null,
+     "name": "Harrison Wallace III",
+     "expected": 92
+    },
+    "sawyerrobertson": {
+     "id": null,
+     "name": "Sawyer Robertson",
+     "expected": 93
+    },
+    "anthonysmith": {
+     "id": null,
+     "name": "Anthony Smith",
+     "expected": 94
+    },
+    "jmichaelsturdivant": {
+     "id": null,
+     "name": "J. Michael Sturdivant",
+     "expected": 95
+    },
+    "athankaliakmanis": {
+     "id": null,
+     "name": "Athan Kaliakmanis",
+     "expected": 96
+    },
+    "joshcuevas": {
+     "id": null,
+     "name": "Josh Cuevas",
+     "expected": 97
+    },
+    "dillonbell": {
+     "id": null,
+     "name": "Dillon Bell",
+     "expected": 98
+    },
+    "romellobrinson": {
+     "id": null,
+     "name": "Romello Brinson",
+     "expected": 99
+    },
+    "caullinlacy": {
+     "id": null,
+     "name": "Caullin Lacy",
+     "expected": 100
+    },
+    "tjharden": {
+     "id": null,
+     "name": "T.J. Harden",
+     "expected": 101
+    },
+    "kevoncoleman": {
+     "id": null,
+     "name": "Kevon Coleman Jr.",
+     "expected": 43
+    }
+   }
+  }
+ }
+}

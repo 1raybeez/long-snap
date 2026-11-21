@@ -1,0 +1,46 @@
+import type { CacheResource } from "../../provider-cache/src/types.ts";
+import type { SleeperHubResource } from "./types.ts";
+
+export type SleeperCacheClass = "STATIC_OR_RARE" | "SEASON_CONFIGURATION" | "ROSTER_STATE" | "LIVE_OR_WEEKLY_STATE" | "PLAYER_CATALOG";
+
+export const SLEEPER_CACHE_POLICY: Readonly<Record<SleeperCacheClass, number>> = {
+  STATIC_OR_RARE: 7 * 24 * 60 * 60 * 1000,
+  SEASON_CONFIGURATION: 6 * 60 * 60 * 1000,
+  ROSTER_STATE: 5 * 60 * 1000,
+  LIVE_OR_WEEKLY_STATE: 60 * 1000,
+  PLAYER_CATALOG: 24 * 60 * 60 * 1000,
+};
+
+export const SLEEPER_RESOURCE_POLICY: Readonly<Record<SleeperHubResource, SleeperCacheClass>> = {
+  NFL_STATE: "ROSTER_STATE",
+  WINNERS_BRACKET: "ROSTER_STATE",
+  LOSERS_BRACKET: "ROSTER_STATE",
+  LEAGUE: "SEASON_CONFIGURATION",
+  USERS: "ROSTER_STATE",
+  ROSTERS: "ROSTER_STATE",
+  MATCHUPS: "LIVE_OR_WEEKLY_STATE",
+  TRANSACTIONS: "LIVE_OR_WEEKLY_STATE",
+  DRAFTS: "SEASON_CONFIGURATION",
+  DRAFT_PICKS: "SEASON_CONFIGURATION",
+  PLAYERS: "PLAYER_CATALOG",
+  USER: "STATIC_OR_RARE",
+};
+
+export const SLEEPER_RESOURCE_CACHE: Readonly<Record<SleeperHubResource, CacheResource>> = {
+  NFL_STATE: "NFL_STATE",
+  WINNERS_BRACKET: "WINNERS_BRACKET",
+  LOSERS_BRACKET: "LOSERS_BRACKET",
+  LEAGUE: "LEAGUE",
+  USERS: "LEAGUE_USERS",
+  ROSTERS: "ROSTERS",
+  MATCHUPS: "MATCHUPS",
+  TRANSACTIONS: "TRANSACTIONS",
+  DRAFTS: "DRAFTS",
+  DRAFT_PICKS: "DRAFT_PICKS",
+  PLAYERS: "PLAYERS",
+  USER: "USER",
+};
+
+export function sleeperTtlMs(resource: SleeperHubResource): number {
+  return SLEEPER_CACHE_POLICY[SLEEPER_RESOURCE_POLICY[resource]];
+}

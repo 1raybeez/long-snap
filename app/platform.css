@@ -1,0 +1,87 @@
+:root {
+  --p-page: #f3f5f8; --p-card: #ffffff; --p-border: #dfe4ec; --p-text: #0f172a; --p-muted: #5b6578; --p-accent: #1d4ed8;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --p-page: #0b0f17; --p-card: #131a26; --p-border: #263247; --p-text: #e8edf5; --p-muted: #9aa6ba; --p-accent: #6c9bff; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--p-page); color: var(--p-text); font-family: Inter, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.p-wrap { max-width: 1080px; margin: 0 auto; padding: 28px 16px 64px; }
+.p-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.p-kicker { margin: 0; font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--p-muted); }
+.p-h1 { margin: 4px 0 0; font-size: 32px; font-weight: 900; font-style: italic; letter-spacing: -0.02em; }
+.p-note { margin: 0; font-size: 13px; color: var(--p-muted); }
+.p-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.p-card { display: flex; flex-direction: column; background: var(--p-card); border: 1px solid var(--p-border); border-radius: 16px; overflow: hidden; text-decoration: none; }
+.p-card__band { display: flex; align-items: center; gap: 14px; padding: 16px; }
+.p-card__logo { width: 56px; height: 56px; border-radius: 12px; object-fit: contain; background: rgba(255,255,255,0.08); flex: none; }
+.p-card__name { margin: 0; font-size: 19px; font-weight: 900; font-style: italic; line-height: 1.15; }
+.p-card__tag { margin: 2px 0 0; font-size: 12px; opacity: 0.8; }
+.p-card__body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.p-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.p-chip { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--p-border); color: var(--p-muted); }
+.p-chip--new { border-color: transparent; background: var(--p-accent); color: #fff; }
+.p-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; }
+.p-btn { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 800; text-decoration: none; border: 1px solid var(--p-border); }
+.p-btn--primary { border-color: transparent; color: #fff; }
+.p-section { margin-top: 36px; }
+.p-h2 { margin: 0 0 12px; font-size: 13px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; color: var(--p-muted); }
+.p-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.p-table th, .p-table td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--p-border); }
+.p-table th { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--p-muted); }
+.p-table td.num, .p-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.p-panel { background: var(--p-card); border: 1px solid var(--p-border); border-radius: 16px; padding: 16px; overflow-x: auto; }
+
+.p-hq { position: relative; isolation: isolate; min-height: 100vh; color: #e6eef8; background: radial-gradient(circle at 80% -20%, #173b54 0, transparent 38%), #08111f;
+  --p-card: rgb(17 37 56 / 78%); --p-border: rgb(145 182 211 / 20%); --p-text: #e6eef8; --p-muted: #9bb3c7; --p-accent: #79c5e6; }
+.p-hq::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(circle at 75% 12%, rgb(222 175 88 / 22%), transparent 35%), linear-gradient(180deg, rgb(8 12 24 / 10%), rgb(8 12 24 / 88%) 70%), url("/branding/hall-of-fame.jpg") center top / cover no-repeat;
+  opacity: 0.38; }
+.p-hq .p-kicker { color: #d7c28f; }
+.p-hq .p-h1 { color: #f4f8fc; text-shadow: 0 2px 18px rgb(0 0 0 / 45%); font-size: clamp(34px, 6vw, 52px); }
+.p-hq .p-note { color: #a9c0d3; }
+.p-hq .p-card { background: var(--p-card); border-color: var(--p-border); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 18px 45px rgb(0 0 0 / 28%); color: var(--p-text); }
+.p-hq .p-chip { border-color: rgb(145 182 211 / 28%); color: #9fc3d8; }
+.p-hq .p-chip--new { background: #bde9ff; color: #07111e; }
+.p-hq .p-btn { border-color: rgb(145 182 211 / 30%); color: #dcebf4; }
+.p-hq .p-btn--primary { color: #fff; }
+.p-hq .p-h2 { color: #d7c28f; }
+.p-tabs { display: flex; gap: 4px; margin-top: 16px; overflow-x: auto; scrollbar-width: none; }
+.p-tabs a { flex: none; padding: 10px 12px 11px; border-bottom: 3px solid transparent; color: inherit; opacity: 0.8; font-size: 14px; font-weight: 800; text-decoration: none; }
+.p-tabs a.is-active { opacity: 1; }
+.p-tabs a:hover { opacity: 1; }
+.p-tabs__ext { margin-left: auto; font-weight: 600 !important; opacity: 0.65 !important; }
+.p-account { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px; }
+.p-account em { color: #f6cf91; font-style: normal; }
+.p-account__err { color: #fca5a5; }
+.p-chip--mine, .p-hq .p-chip--mine { border-color: transparent; background: #d7c28f; color: #1b1405; }
+.p-hq .p-account .p-btn { background: rgb(255 255 255 / 10%); color: #f4f8fc; border-color: rgb(255 255 255 / 30%); }
+.p-hq .p-account .p-btn--primary { background: #1d4ed8; border-color: transparent; color: #fff; }
+
+.ck-post { font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+.ck-post h2, .ck-post h3, .ck-post h4 { margin: 14px 0 8px; line-height: 1.2; font-weight: 900; }
+.ck-post p, .ck-post ul, .ck-post ol { margin: 0 0 12px; }
+.ck-post hr { border: 0; border-top: 1px solid var(--tile-border); margin: 18px 0; }
+.ck-post blockquote { margin: 0 0 12px; padding-left: 12px; border-left: 3px solid var(--tile-accent); }
+.ck-post .md-table { overflow-x: auto; margin: 0 0 12px; }
+.ck-post table { border-collapse: collapse; width: 100%; font-size: 14px; }
+.ck-post th, .ck-post td { border-bottom: 1px solid var(--tile-border); padding: 6px 8px; text-align: left; vertical-align: top; }
+/* League Info section tabs (under the league tabs) */
+.p-subtabs { margin-top: 0; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.p-subtabs a { font-size: 13px; padding: 8px 10px 9px; }
+
+/* League picker in each league header (2026-11-05): small, in each league's own header colors. */
+.p-switcher { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sw-text, inherit); }
+.p-switcher__label { opacity: .7; }
+.p-switcher select { appearance: none; -webkit-appearance: none; font: inherit; font-size: 13px; letter-spacing: .02em; text-transform: none; font-weight: 600; color: var(--sw-text, #fff); background-color: transparent; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%; background-size: 5px 5px; background-repeat: no-repeat; border: 1px solid color-mix(in srgb, var(--sw-text, #fff) 35%, transparent); border-radius: 999px; padding: 4px 28px 4px 12px; min-height: 30px; max-width: 220px; cursor: pointer; }
+.p-switcher select:hover, .p-switcher select:focus-visible { border-color: var(--sw-accent, currentColor); outline: none; box-shadow: 0 0 0 2px color-mix(in srgb, var(--sw-accent, #f97316) 45%, transparent); }
+.p-switcher option { color: var(--sw-text, #fff); background: var(--sw-bg, #1f2937); }
+@media (max-width: 520px) { .p-switcher__label { display: none; } .p-switcher select { max-width: 160px; } }
+.ck-post .md-img { display: block; max-width: 100%; height: auto; margin: 12px auto; border-radius: 12px; }
+
+/* Buttons (not links) on the dark My Leagues page: browsers paint <button> white by default (2026-11-13, alerts). */
+.p-hq button.p-btn { background: rgb(255 255 255 / 10%); color: #f4f8fc; border-color: rgb(255 255 255 / 30%); cursor: pointer; font-family: inherit; }
+.p-hq button.p-btn--primary { background: #1d4ed8; border-color: transparent; color: #fff; }

@@ -1,0 +1,32 @@
+{
+ "name": "Lakeview FFL",
+ "short": "LV",
+ "motto": "Redraft, every year a fresh start",
+ "place": "Lakeview",
+ "founded": 2019,
+ "colors": {
+  "nav": "#111827",
+  "accent": "#ef4444",
+  "brand": "#c8102e"
+ },
+ "divisions": [],
+ "seeding": [
+  {
+   "since": 2022,
+   "summary": "Top 6 by record (Sleeper's default). Seeds 1 and 2 get a bye.",
+   "steps": [
+    {
+     "count": 6,
+     "by": "record"
+    }
+   ]
+  }
+ ],
+ "veto": null,
+ "persona": "Channel 9 Sports Desk",
+ "type": "redraft",
+ "keepers": null,
+ "taxi": null,
+ "rookie_rounds": null,
+ "vetoes": []
+}

@@ -1,0 +1,36 @@
+{
+ "name": "Ironworks Dynasty",
+ "short": "IW",
+ "motto": "Dynasty since 2022",
+ "place": "Ironworks",
+ "founded": 2022,
+ "colors": {
+  "nav": "#1E2A32",
+  "accent": "#F15B24",
+  "brand": "#F15B24"
+ },
+ "divisions": [],
+ "seeding": [
+  {
+   "since": 2022,
+   "summary": "4 by record, then 2 by points for. Seeds 1 and 2 get a bye.",
+   "steps": [
+    {
+     "count": 4,
+     "by": "record"
+    },
+    {
+     "count": 2,
+     "by": "points_for"
+    }
+   ]
+  }
+ ],
+ "veto": null,
+ "persona": "The Ironworks Wire",
+ "type": "dynasty",
+ "keepers": null,
+ "taxi": 4,
+ "rookie_rounds": 4,
+ "vetoes": []
+}

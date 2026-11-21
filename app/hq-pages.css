@@ -1,0 +1,132 @@
+/*
+ * Shared league pages reused on the platform (Legislative Hub, proposal form, owner feedback form and inbox): Tailwind utilities only (no global base reset,
+ * so nothing else on the site changes), scanned only from those pages. The pages are written for the league sites'
+ * lcc2 design classes and --lcc-* colours; .hq-lcc maps them to the league's tile theme (light and dark).
+ */
+@layer theme, base, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "../hq/packages/league-site-pages/src";
+@source "../components/league";
+@source "./[league]/league-info/legislative";
+@source "./[league]/feedback";
+@source "./[league]/commish/feedback";
+
+@source "./[league]/commish/proposals";
+@source "./[league]/commish/finance";
+
+@source "./[league]/commish/weekly-operations";
+@source "./[league]/commish/predictor";
+@source "./[league]/commish/maintenance";
+@source "./[league]/commish/post-draft";
+@source "../engines/river-city/components";
+
+@source "../engines/long-country-club/components";
+
+@source "./[league]/league-info/drafts/league-recap";
+
+@source "./[league]/gm/draft";
+@source "./[league]/league-info/drafts/math";
+
+@layer base {
+  .hq-rc, .hq-rc *, .hq-rc ::before, .hq-rc ::after { box-sizing: border-box; border: 0 solid; margin: 0; padding: 0; }
+  .hq-rc h1, .hq-rc h2, .hq-rc h3, .hq-rc h4, .hq-rc h5, .hq-rc h6 { font-size: inherit; font-weight: inherit; }
+  .hq-rc ol, .hq-rc ul, .hq-rc menu { list-style: none; }
+  .hq-rc a { color: inherit; text-decoration: inherit; }
+  .hq-rc img, .hq-rc svg { display: block; vertical-align: middle; }
+  .hq-rc img { max-width: 100%; height: auto; }
+  .hq-rc button, .hq-rc input, .hq-rc select, .hq-rc optgroup, .hq-rc textarea {
+    font: inherit; letter-spacing: inherit; color: inherit; background-color: transparent; border-radius: 0; opacity: 1;
+  }
+  .hq-rc button { cursor: pointer; }
+  .hq-rc button:disabled { cursor: default; }
+  .hq-rc textarea { resize: vertical; }
+  .hq-rc ::placeholder { opacity: 1; color: color-mix(in oklab, currentcolor 50%, transparent); }
+  .hq-rc summary { display: list-item; }
+  .hq-rc b, .hq-rc strong { font-weight: bolder; }
+}
+/* platform.css colours every link (`a { color: inherit }`, unlayered, so it would beat the pages' text-* utilities). */
+.hq-rc a { color: revert-layer; }
+
+.hq-lcc {
+  --lcc-color-text: var(--tile-text);
+  --lcc-color-text-muted: var(--tile-muted);
+  --lcc-color-border: var(--tile-border);
+  --lcc-color-border-strong: var(--tile-border);
+  --lcc-color-surface: var(--tile-card);
+  --lcc-color-surface-raised: var(--tile-card);
+  --lcc-brand-primary: var(--tile-action);
+  --lcc-brand-secondary: var(--tile-accent);
+  --lcc-color-surface-muted: color-mix(in srgb, var(--tile-action) 8%, var(--tile-card));
+  --lcc-semantic-warning: var(--tile-trophy, #b45309);
+  --lcc-interactive: var(--tile-action);
+  --lcc-interactive-focus: var(--tile-accent);
+  --lcc-semantic-positive: var(--tile-positive);
+  --lcc-semantic-negative: var(--tile-negative);
+  --lcc-font-ui: var(--tile-font-ui, system-ui, sans-serif);
+  --lcc-font-display: var(--tile-font-display, system-ui, sans-serif);
+  color: var(--lcc-color-text);
+  font-family: var(--lcc-font-ui);
+}
+@media (prefers-color-scheme: dark) {
+  .hq-lcc {
+    --lcc-color-text: var(--tile-text-dark, var(--tile-text));
+    --lcc-color-text-muted: var(--tile-muted-dark, var(--tile-muted));
+    --lcc-color-border: var(--tile-border-dark, var(--tile-border));
+    --lcc-color-border-strong: var(--tile-border-dark, var(--tile-border));
+    --lcc-color-surface: var(--tile-card-dark, var(--tile-card));
+    --lcc-color-surface-raised: var(--tile-card-dark, var(--tile-card));
+    --lcc-brand-primary: var(--tile-action-dark, var(--tile-action));
+    --lcc-brand-secondary: var(--tile-accent-dark, var(--tile-accent));
+    --lcc-color-surface-muted: color-mix(in srgb, var(--tile-action-dark, var(--tile-action)) 14%, var(--tile-card-dark, var(--tile-card)));
+    --lcc-interactive: var(--tile-action-dark, var(--tile-action));
+    --lcc-semantic-positive: var(--tile-positive-dark, var(--tile-positive));
+    --lcc-semantic-negative: var(--tile-negative-dark, var(--tile-negative));
+  }
+}
+.hq-lcc .font-ui { font-family: var(--lcc-font-ui); }
+.hq-lcc .lcc2-page-shell { padding: 0 0 2rem; }
+.hq-lcc .lcc2-page-container { max-width: 72rem; margin: 0 auto; }
+.hq-lcc .lcc2-card {
+  border: 1px solid var(--lcc-color-border); border-radius: 0.75rem; background: var(--lcc-color-surface-raised);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); color: var(--lcc-color-text); padding: 1.25rem;
+}
+.hq-lcc .lcc2-card--raised { box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14); }
+.hq-lcc .lcc2-label { color: var(--lcc-color-text-muted); font-size: 0.68rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; margin: 0; }
+.hq-lcc .lcc2-body { color: var(--lcc-color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+.hq-lcc .lcc2-home-identity__title { font-family: var(--lcc-font-display); font-style: var(--tile-display-style, normal); font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.05; margin: 0; }
+.hq-lcc .lcc2-home-identity__supporting { color: var(--lcc-color-text-muted); font-size: 1rem; line-height: 1.6; margin: 0.75rem 0 0; }
+.hq-lcc .lcc2-button {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem; border: 1px solid transparent;
+  border-radius: 0.5rem; cursor: pointer; font-family: var(--lcc-font-ui); font-size: 0.75rem; font-weight: 900; letter-spacing: 0.06em;
+  padding: 0.65rem 1rem; text-decoration: none; text-transform: uppercase;
+}
+.hq-lcc .lcc2-button:disabled { opacity: 0.6; cursor: default; }
+.hq-lcc .lcc2-button:focus-visible { outline: 3px solid var(--lcc-interactive-focus); outline-offset: 3px; }
+.hq-lcc .lcc2-button--primary { border-color: var(--lcc-brand-primary); background: var(--lcc-brand-primary); color: #fff; }
+.hq-lcc .lcc2-button--primary:hover { filter: brightness(1.08); }
+.hq-lcc .lcc2-button--secondary { border-color: var(--lcc-color-border); background: transparent; color: var(--lcc-color-text); }
+.hq-lcc .lcc2-button--secondary:hover { border-color: var(--lcc-brand-primary); }
+.hq-lcc input, .hq-lcc textarea, .hq-lcc select, .hq-lcc button { font: inherit; }
+.hq-lcc h1, .hq-lcc h2, .hq-lcc h3, .hq-lcc p, .hq-lcc dl { margin-block: 0; }
+.hq-lcc dd { margin: 0; }
+.hq-lcc ol, .hq-lcc ul { list-style: none; margin: 0; padding: 0; }
+.hq-lcc .lcc2-input {
+  width: 100%; min-height: 2.75rem; border: 1px solid var(--lcc-color-border-strong); border-radius: 0.5rem; background: var(--lcc-color-surface-raised);
+  color: var(--lcc-color-text); font-size: 0.9rem; line-height: 1.45; padding: 0.7rem 0.8rem; box-sizing: border-box;
+}
+.hq-lcc .lcc2-input:focus-visible { border-color: var(--lcc-interactive); outline: 2px solid var(--lcc-interactive-focus); outline-offset: 2px; }
+.hq-lcc .lcc2-badge {
+  display: inline-flex; width: fit-content; align-items: center; border: 1px solid var(--lcc-color-border-strong); border-radius: 999px; color: var(--lcc-color-text);
+  font-size: 0.67rem; font-weight: 900; letter-spacing: 0.08em; line-height: 1; padding: 0.4rem 0.65rem; text-transform: uppercase;
+}
+.hq-lcc .lcc2-badge--neutral { background: var(--lcc-color-surface); }
+.hq-lcc .lcc2-badge--info { border-color: color-mix(in srgb, var(--lcc-interactive) 50%, transparent); background: color-mix(in srgb, var(--lcc-interactive) 12%, var(--lcc-color-surface-raised)); color: var(--lcc-interactive); }
+.hq-lcc fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.hq-lcc .lcc2-card > button { background: transparent; border: 0; color: inherit; }
+
+.hq-lcc h4, .hq-lcc h5, .hq-lcc h6 { margin-block: 0; }
+.hq-lcc .lcc2-section-heading__eyebrow { color: var(--lcc-brand-secondary); font-size: 0.68rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; margin: 0; }
+.hq-lcc .lcc2-section-heading__title { color: var(--lcc-color-text); font-family: var(--lcc-font-display); font-style: var(--tile-display-style, normal); font-size: 1.6rem; font-weight: 900; line-height: 1.15; margin: 0.25rem 0 0; }
+.hq-lcc .lcc2-section-heading__supporting { color: var(--lcc-color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0.35rem 0 0; }
+.hq-lcc .lcc2-badge--positive { border-color: color-mix(in srgb, var(--lcc-semantic-positive) 50%, transparent); background: color-mix(in srgb, var(--lcc-semantic-positive) 12%, var(--lcc-color-surface-raised)); color: var(--lcc-semantic-positive); }
