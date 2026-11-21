@@ -12,7 +12,7 @@ export default function GetStartedPage() {
         <p className="ls-eyebrow">Get your own site</p>
         <h1 className="ls-h1">Run Long Snap for your league.</h1>
         <p className="ls-lead">Free, with no paid plan, and nothing to code. You run your own copy on your own free accounts, so your league&rsquo;s data stays with you. The guide has a picture for every click.</p>
-        <div className="ls-btns"><Link className="ls-btn dark" href="/get-started/practice">Try the setup (practice run)</Link></div>
+        <div className="ls-btns"><Link className="ls-btn" href="/get-started/setup">Set up your league</Link><Link className="ls-btn ghost" href="/get-started/practice">Practice with a made-up league</Link></div>
 
         <h2 className="ls-h2">Two editions</h2>
         <div className="ls-grid2">
@@ -37,7 +37,7 @@ export default function GetStartedPage() {
           <div className="ls-step"><b>A free Vercel account</b><p className="ls-body">Puts your site online. Sign up with GitHub in one click.</p></div>
           <div className="ls-step"><b>About 10 minutes</b><p className="ls-body">Most of it is answering your league&rsquo;s house rules.</p></div>
         </div>
-        <div className="ls-callout">The one-click copy button and the step-by-step guide are being tested now. Until they&rsquo;re public, try the practice run to see every form you&rsquo;ll fill in.</div>
+        <div className="ls-callout">The Basic edition is ready today: dashboard, matchups, standings seeded your way, power rankings, playoff odds, weekly recaps, trades and GM tools. League history pages, the rule book and votes, and the veto log for your own league are coming next. Each new Sleeper season, run the setup again so your site follows the new season.</div>
       </main>
       <footer className="ls-foot"><div><span>Long Snap · free league sites for Sleeper commissioners</span><span>Not affiliated with Sleeper or the NFL</span></div></footer>
     </div>

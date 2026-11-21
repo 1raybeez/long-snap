@@ -11,6 +11,7 @@
  * records. A tile never invents data: missing data renders an explicit state.
  */
 
+import { OWN_LEAGUE } from "../../../../lib/ownLeague.ts";
 export type TileKey =
   | "NFL_GAME_CENTER"
   | "REIGNING_CHAMPION"
@@ -116,6 +117,7 @@ export interface PlayoffFormat {
 }
 
 export const LEAGUE_PLAYOFF_FORMATS: Readonly<Record<string, PlayoffFormat>> = {
+  ...(OWN_LEAGUE ? { [OWN_LEAGUE.slug]: { ...OWN_LEAGUE.seeding, chaseByPoints: OWN_LEAGUE.seeding.pointsSeeds > 0 } } : {}),
   // Long Snap demo leagues: each commissioner's seeding answer from the setup page.
   "harbor-city-ffl": { divisionWinners: 3, recordSeeds: 1, pointsSeeds: 2, restByPoints: true },
   "mill-creek-ffl": { divisionWinners: 2, recordSeeds: 2, pointsSeeds: 2 },

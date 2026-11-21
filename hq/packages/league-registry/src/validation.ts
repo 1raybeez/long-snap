@@ -90,7 +90,9 @@ export function validateRegistry(registry: LeagueRegistry): readonly string[] {
   const providerIds = new Set<string>();
   const seenRequiredIds = new Set<string>();
 
-  if (registry.leagues.length !== REQUIRED_LEAGUE_IDS.length) {
+  // Long Snap: either the demo leagues or one commissioner's own league.
+  const demo = registry.leagues.some((l) => REQUIRED_LEAGUE_IDS.includes(l.id as (typeof REQUIRED_LEAGUE_IDS)[number]));
+  if (demo && registry.leagues.length !== REQUIRED_LEAGUE_IDS.length) {
     errors.push(`expected exactly ${REQUIRED_LEAGUE_IDS.length} leagues`);
   }
 
@@ -107,7 +109,7 @@ export function validateRegistry(registry: LeagueRegistry): readonly string[] {
 
     if (REQUIRED_LEAGUE_IDS.includes(league.id as (typeof REQUIRED_LEAGUE_IDS)[number])) {
       seenRequiredIds.add(league.id);
-    } else {
+    } else if (demo) {
       errors.push(`unexpected league id: ${league.id}`);
     }
 
@@ -147,7 +149,7 @@ export function validateRegistry(registry: LeagueRegistry): readonly string[] {
   }
 
   for (const requiredId of REQUIRED_LEAGUE_IDS) {
-    if (!seenRequiredIds.has(requiredId)) {
+    if (demo && !seenRequiredIds.has(requiredId)) {
       errors.push(`missing required league: ${requiredId}`);
     }
   }

@@ -33,7 +33,7 @@ export const DEMO_LEAGUES: Readonly<Record<DemoKey, { slug: string; name: string
 export const DEMO_KEYS = Object.keys(DEMO_LEAGUES) as DemoKey[];
 export const demoKeyForSlug = (slug: string) => DEMO_KEYS.find((k) => DEMO_LEAGUES[k].slug === slug) ?? null;
 /** The demo leagues are on unless LONGSNAP_DEMO is set to 0 (a league's own site turns them off). */
-export const isDemoMode = () => (process.env.LONGSNAP_DEMO ?? "1") !== "0";
+export const isDemoMode = () => (process.env.LONGSNAP_DEMO ?? "1") !== "0" && !process.env.LONGSNAP_LEAGUE;
 
 /** Every demo league slug (for pages that list which leagues have a feature). */
 export const DEMO_SLUGS: readonly string[] = Object.values(DEMO_LEAGUES).map((l) => l.slug);

@@ -52,7 +52,7 @@ export function LeagueNav({ league, active, commish = false }: { league: Platfor
     <div style={{ background: c?.header ?? "#1f2937", color: c?.headerText ?? "#fff" }}>
       <div className="p-wrap" style={{ paddingTop: 18, paddingBottom: 0 }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
-          <p className="p-kicker" style={{ color: "inherit", opacity: 0.75, margin: 0 }}><Link href="/">{isDemoMode() ? "← All league types" : "← My Leagues"}</Link></p>
+          <p className="p-kicker" style={{ color: "inherit", opacity: 0.75, margin: 0 }}>{process.env.LONGSNAP_LEAGUE ? null : <Link href="/">{isDemoMode() ? "← All league types" : "← My Leagues"}</Link>}</p>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <ShareButton />
             <LeagueSwitcher current={league.slug} colors={{ bg: c?.header ?? "#1f2937", text: c?.headerText ?? "#fff", accent: c?.accent ?? "#f97316" }} />

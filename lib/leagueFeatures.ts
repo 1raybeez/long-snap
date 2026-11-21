@@ -1,4 +1,5 @@
 
+import { OWN_LEAGUE } from "./ownLeague.ts";
 export type LccEngineFeature = "whoami" | "money" | "commish" | "ledger" | "feedback" | "legislative" | "rulebook" | "ask" | "contact" | "war-room" | "draft-intelligence" | "pages" | "export" | "written" | "appendix";
 export const LCC_ENGINE: ReadonlySet<LccEngineFeature> = new Set<LccEngineFeature>(["whoami", "money", "commish", "ledger", "feedback", "legislative", "rulebook", "ask", "contact", "war-room", "draft-intelligence", "pages", "export", "appendix", "written"]); // "written" on 2026-11-08: the weekly writing jobs save into HQ too
 
@@ -18,7 +19,7 @@ const withRva = (feature: RvaEngineFeature, ids: readonly string[]): ReadonlySet
 export const WHOAMI_HERE_LEAGUES: ReadonlySet<string> = new Set([...(RIVER_CITY_ENGINE.has("whoami") ? ["river-city-ffl"] : []), ...(LCC_ENGINE.has("whoami") ? ["long-country-club"] : []), ...(RVA_ENGINE.has("whoami") ? ["rva-eskimo-brothers"] : [])]);
 
 /** Which league-specific tools run on the platform (the rest open on the league's current site until they move). */
-export const GM_LEAGUES: ReadonlySet<string> = new Set(["harbor-city-ffl", "mill-creek-ffl", "ironworks-dynasty", "lakeview-ffl", "rva-eskimo-brothers", "long-country-club", "c4g-fantasy-football", "river-city-ffl", "absolutely-gross"]);
+export const GM_LEAGUES: ReadonlySet<string> = new Set([...(OWN_LEAGUE ? [OWN_LEAGUE.slug] : []), "harbor-city-ffl", "mill-creek-ffl", "ironworks-dynasty", "lakeview-ffl", "rva-eskimo-brothers", "long-country-club", "c4g-fantasy-football", "river-city-ffl", "absolutely-gross"]);
 
 export const VETO_LOG_LEAGUES: ReadonlySet<string> = new Set(["river-city-ffl", "long-country-club", "rva-eskimo-brothers", "harbor-city-ffl", "mill-creek-ffl"]);
 

@@ -1,4 +1,5 @@
 import demoOwners from "../data/demo/owners.json" with { type: "json" };
+import { OWN_LEAGUE } from "./ownLeague.ts";
 import type { LeagueData, LeagueTeam } from "./leagueData.ts";
 import { sleeperFeedFetch } from "./sleeperFeed.ts";
 
@@ -11,7 +12,7 @@ type SleeperUser = { user_id: string; display_name?: string; avatar?: string | n
  * Owner names the commissioner entered for each Sleeper account (Sleeper user id → name). Kept in
  * data/demo/owners.json so the site and the weekly writers read one list. Anyone not listed shows their Sleeper name.
  */
-const OWNER_NAMES: Readonly<Record<string, string>> = { ...demoOwners.owners };
+const OWNER_NAMES: Readonly<Record<string, string>> = { ...demoOwners.owners, ...(OWN_LEAGUE?.owners ?? {}) };
 
 async function json<T>(url: string): Promise<T | null> {
   try { const r = await sleeperFeedFetch(url, { next: { revalidate: 900 } } as RequestInit); return r.ok ? ((await r.json()) as T) : null; } catch { return null; }

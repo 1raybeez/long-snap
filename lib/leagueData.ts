@@ -23,6 +23,7 @@ import iwLeague from "../data/demo/dynasty/site/league.json" with { type: "json"
 import iwGames from "../data/demo/dynasty/site/games.json" with { type: "json" };
 import iwHistory from "../data/demo/dynasty/site/history.json" with { type: "json" };
 import iwPeople from "../data/demo/dynasty/site/people.json" with { type: "json" };
+import { OWN_LEAGUE } from "./ownLeague.ts";
 import { wadeRoastFor } from "./wadeRoast.ts";
 import type { WeeklyRoastFile } from "../hq/packages/league-tiles/src/weekly-roast.ts";
 import type { WrittenPreviewFile } from "../hq/packages/league-tiles/src/matchup-center.ts";
@@ -110,7 +111,7 @@ const DATA: Record<string, LeagueData> = {
   "ironworks-dynasty": demoSite({ league: iwLeague, games: iwGames, history: iwHistory, people: iwPeople }, demoRules("maxPf", "Ironworks rookie draft: the six teams that miss the playoffs pick 1–6 by Max PF, lowest first. Playoff teams pick 7–12 by playoff finish.", true), "dynasty"),
 };
 
-const SLEEPER_ONLY_IDS: ReadonlySet<string> = new Set<string>([]);
+const SLEEPER_ONLY_IDS: ReadonlySet<string> = new Set<string>(OWN_LEAGUE ? [OWN_LEAGUE.slug] : []);
 const SLEEPER_ONLY: Record<string, string> = Object.fromEntries(
   HQ_LEAGUE_REGISTRY.leagues.filter((l) => SLEEPER_ONLY_IDS.has(l.id)).flatMap((l) => {
     const id = l.seasons.find((s) => s.season === l.currentSeason)?.providerBindings.find((b) => b.provider === "SLEEPER")?.externalLeagueId;

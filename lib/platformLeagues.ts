@@ -1,5 +1,6 @@
 import { HQ_LEAGUE_REGISTRY } from "../hq/config/leagues/registry.ts";
 import { DEMO_LEAGUES } from "./demo/demoLeagues.ts";
+import { OWN_LEAGUE } from "./ownLeague.ts";
 import { LEAGUE_TILE_THEMES, type LeagueTileTheme } from "../hq/packages/league-tiles/src/themes.ts";
 
 /**
@@ -33,10 +34,19 @@ const LOGOS: Readonly<Record<string, string>> = {
 
 };
 
-const ON_PLATFORM: ReadonlySet<string> = new Set([...Object.values(DEMO_LEAGUES).map((l) => l.slug), ]);
+const ON_PLATFORM: ReadonlySet<string> = new Set([...Object.values(DEMO_LEAGUES).map((l) => l.slug), ...(OWN_LEAGUE ? [OWN_LEAGUE.slug] : []), ]);
 
 /** Leagues with no league site of their own get a simple platform theme. */
 export const PLATFORM_THEMES: Readonly<Record<string, LeagueTileTheme>> = {
+  ...(OWN_LEAGUE ? { [OWN_LEAGUE.slug]: {
+    leagueId: OWN_LEAGUE.slug,
+    name: OWN_LEAGUE.name,
+    tagline: OWN_LEAGUE.tagline || undefined,
+    colors: { page: "#f4f6f9", header: OWN_LEAGUE.colors.header, headerText: "#ffffff", card: "#ffffff", cardBorder: "#dfe4ec", text: "#0f172a", muted: "#5b6578", accent: OWN_LEAGUE.colors.accent, action: OWN_LEAGUE.colors.action, actionText: "#ffffff", positive: "#15803d", negative: "#dc2626", trophy: "#c99a2e" },
+    dark: { page: "#070d1c", header: OWN_LEAGUE.colors.header, headerText: "#ffffff", card: "#0f1a33", cardBorder: "#24345a", text: "#e6ebf5", muted: "#9aa6c0", accent: OWN_LEAGUE.colors.accent, action: OWN_LEAGUE.colors.action, actionText: "#ffffff", positive: "#3ccb84", negative: "#f26b6b", trophy: "#e8b923" },
+    fonts: { display: "'Inter', 'Helvetica Neue', Arial, sans-serif", ui: "'Inter', 'Helvetica Neue', Arial, sans-serif" },
+    displayStyle: "italic-condensed",
+  } as LeagueTileTheme } : {}),
   [DEMO_LEAGUES.redraft.slug]: {
     leagueId: DEMO_LEAGUES.redraft.slug,
     name: DEMO_LEAGUES.redraft.name,

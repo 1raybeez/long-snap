@@ -1,3 +1,4 @@
+import { OWN_LEAGUE, ownCurrentSeason, ownSeasonYears, type OwnLeague } from "../../../lib/ownLeague.ts";
 import { DEMO_KEYS, DEMO_LEAGUES, DEMO_SEASONS, demoLeagueId } from "../../../lib/demo/demoLeagues.ts";
 import type {
   ConfigReference,
@@ -160,7 +161,15 @@ const demoLeague = (key: (typeof DEMO_KEYS)[number]) =>
   league(DEMO_LEAGUES[key].slug, DEMO_LEAGUES[key].name, DEMO_LEAGUES[key].short, DEMO_LEAGUES[key].format, "FULL_LEAGUE_EXPERIENCE", true, demoCapabilities,
     seasonsFromMap(DEMO_LEAGUES[key].slug, DEMO_LEAGUES[key].format, Object.fromEntries(DEMO_SEASONS.map((s) => [s, demoLeagueId(key, s)])), DEMO_SEASONS[0]));
 
+// A commissioner's own league (LONGSNAP_LEAGUE, written by the setup page): it replaces the demo leagues.
+const OWN_FORMAT = { redraft: "REDRAFT", keeper: "KEEPER", auction: "AUCTION_KEEPER", dynasty: "DYNASTY" } as const;
+const ownLeague = (l: OwnLeague): LeagueRegistryEntry => ({
+  ...league(l.slug, l.name, l.short, OWN_FORMAT[l.type], "TOOL_ONLY", false, demoCapabilities,
+    seasonsFromMap(l.slug, OWN_FORMAT[l.type], Object.fromEntries(Object.entries(l.seasons).map(([y, id]) => [Number(y), id])), ownSeasonYears(l)[0]!).filter((s) => s.season <= ownCurrentSeason(l))),
+  currentSeason: ownCurrentSeason(l),
+});
+
 export const HQ_LEAGUE_REGISTRY = {
   schemaVersion: 1,
-  leagues: DEMO_KEYS.map(demoLeague),
+  leagues: OWN_LEAGUE ? [ownLeague(OWN_LEAGUE)] : DEMO_KEYS.map(demoLeague),
 } as const satisfies LeagueRegistry;

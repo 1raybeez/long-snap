@@ -29,6 +29,7 @@ type Setup = {
   dynastyDealer?: boolean;
 };
 
+import { OWN_LEAGUE } from "./ownLeague.ts";
 const FLEX = { FLEX: ["RB", "WR", "TE"], SUPER_FLEX: ["QB", "RB", "WR", "TE"], WRRB_FLEX: ["RB", "WR"], REC_FLEX: ["WR", "TE"] } as const;
 const DEMO_SLOTS = ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "K", "DEF"];
 const demoSetup = (o: { name: string; format: "auction-keeper" | "dynasty" | "redraft"; market: "dynasty" | "redraft"; pickYears: number; reopens: string | null;
@@ -53,6 +54,10 @@ const demoSetup = (o: { name: string; format: "auction-keeper" | "dynasty" | "re
 });
 
 const SETUPS: Record<string, Setup> = {
+  ...(OWN_LEAGUE ? { [OWN_LEAGUE.slug]: demoSetup({ name: OWN_LEAGUE.short, format: OWN_LEAGUE.type === "auction" ? "auction-keeper" : OWN_LEAGUE.type === "dynasty" ? "dynasty" : "redraft",
+    market: OWN_LEAGUE.type === "dynasty" ? "dynasty" : "redraft", pickYears: OWN_LEAGUE.type === "dynasty" ? 3 : 0, reopens: null,
+    keeper: OWN_LEAGUE.type === "auction" && OWN_LEAGUE.keepers ? { max: OWN_LEAGUE.keepers.max, onePerPosition: false, rule: `last price + $${OWN_LEAGUE.keepers.raise ?? 0}` } : null,
+    veto: OWN_LEAGUE.veto ? `A trade is reversed if ${OWN_LEAGUE.veto.needed} of ${OWN_LEAGUE.veto.of} owners not in it vote to veto within ${OWN_LEAGUE.veto.hours} hours.` : "The commissioner reviews trades." }) } : {}),
   // Long Snap demo leagues: each commissioner's answers from the setup page.
   "harbor-city-ffl": demoSetup({ name: "Harbor City", format: "auction-keeper", market: "redraft", pickYears: 0, reopens: null,
     keeper: { max: 2, onePerPosition: true, rule: "Keep up to 2, one per position. A keeper costs his last price + $10." },
