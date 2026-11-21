@@ -62,16 +62,23 @@ Click **Copy settings**. Everything you answered is in that one block of text.
 
 Vercel opens in a new tab.
 
-1. If you don't have a Vercel account: click **Continue with GitHub**. If you don't have a GitHub account either, GitHub walks you through making one (free).
-2. Vercel asks where to put your copy of Long Snap. Leave the name as it is and click **Create**.
-3. You'll see a box named **LONGSNAP_LEAGUE**. Click in it and paste (Cmd+V on a Mac, Ctrl+V on Windows).
-4. Click **Deploy**.
+**8a. Sign in.** Click **GitHub**. If you don't have a Vercel account yet, this makes one (free). If you don't have a GitHub account either, GitHub walks you through making one first.
+
+![Sign in with GitHub](guide/10-vercel-github.png)
+
+**8b. Make your copy.** Leave the name as it is and click **Create**. This puts your own copy of Long Snap in your GitHub.
+
+![Create your copy](guide/11-vercel-create.png)
+
+**8c. Paste your settings.** Click in the **Value** box next to **LONGSNAP_LEAGUE** and paste (Cmd+V on a Mac, Ctrl+V on Windows). Then click **Deploy**.
+
+![Paste and deploy](guide/12-vercel-paste.png)
 
 ## 9. Your site is live
 
 In about two minutes Vercel says **Deployed to Production**. Click **Visit** to open your site. Its address is under **Domains** on your project page, like `your-league.vercel.app`. Share it with your league.
 
-![Deployed](guide/12-live.png)
+![Deployed](guide/13-live.png)
 
 ---
 
