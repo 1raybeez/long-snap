@@ -90,4 +90,4 @@ Run the setup again at **long-snap.vercel.app/get-started/setup** and copy the n
 
 ## A new season
 
-Sleeper starts a new league ID each season. When your league renews, run the setup again with the new ID and update your settings the same way.
+Nothing to do. When your league renews on Sleeper, your site finds the new season by itself (within about a day) and keeps all your history.

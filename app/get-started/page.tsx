@@ -37,7 +37,7 @@ export default function GetStartedPage() {
           <div className="ls-step"><b>A free Vercel account</b><p className="ls-body">Puts your site online. Sign up with GitHub in one click.</p></div>
           <div className="ls-step"><b>About 10 minutes</b><p className="ls-body">Most of it is answering your league&rsquo;s house rules.</p></div>
         </div>
-        <div className="ls-callout">The Basic edition is ready today: dashboard, matchups, standings seeded your way, power rankings, playoff odds, weekly recaps, trades, GM tools, and league history, owner pages, records and rivalries for every season your league has been on Sleeper. The rule book with votes and the veto log for your own league are coming next. Each new Sleeper season, run the setup again so your site follows the new season.</div>
+        <div className="ls-callout">The Basic edition is ready today: dashboard, matchups, standings seeded your way, power rankings, playoff odds, weekly recaps, trades, GM tools, and league history, owner pages, records and rivalries for every season your league has been on Sleeper. The rule book with votes and the veto log for your own league are coming next. When your league renews on Sleeper for a new season, your site finds the new season by itself.</div>
       </main>
       <footer className="ls-foot"><div><span>Long Snap · free league sites for Sleeper commissioners</span><span>Not affiliated with Sleeper or the NFL</span></div></footer>
     </div>

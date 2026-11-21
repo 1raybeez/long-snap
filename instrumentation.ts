@@ -2,6 +2,7 @@
 // The server's Google token can take a moment at start-up, so try a few times in the background.
 export async function register() {
   if (process.env.NEXT_RUNTIME !== "nodejs") return;
+  if (process.env.LONGSNAP_LEAGUE) { const { followNewSeasons } = await import("./lib/ownLeagueRenew"); await followNewSeasons().catch(() => undefined); return; }
   if ((process.env.LONGSNAP_DEMO ?? "1") !== "0" && !process.env.LONGSNAP_LEAGUE) { const { installFakeSleeper } = await import("./lib/demo/fakeSleeper"); installFakeSleeper(); return; }
   const { loadLeagueSecrets } = await import("./lib/leagueSecrets");
   void (async () => {
