@@ -9,6 +9,7 @@ import { LeagueInfoTabs } from "./league-info-tabs";
 import { LeagueSwitcher } from "./league-switcher";
 import { ShareButton } from "./share-button";
 import { LongSnapBar } from "./longsnap-bar";
+import { OWN_LEAGUE } from "@/lib/ownLeague";
 import { isDemoMode } from "@/lib/demo/demoLeagues";
 
 /** League header + tabs on the platform. Tabs appear as each page moves over (Package 5). */
@@ -70,15 +71,12 @@ export function LeagueNav({ league, active, commish = false }: { league: Platfor
         </nav>
         {active === "league-info" && !sleeperOnly ? <LeagueInfoTabs slug={league.slug} accent={c?.accent} tabs={[
           { path: "", label: "Overview" },
-          { path: "constitution", label: "Constitution" },
-          { path: "legislative", label: "Legislative Hub" },
-          { path: "fees", label: "Fees & Payouts" },
+          ...(OWN_LEAGUE?.slug === league.id ? [] : [{ path: "constitution", label: "Constitution" }, { path: "legislative", label: "Legislative Hub" }, { path: "fees", label: "Fees & Payouts" }]),
           { path: "records", label: "Records" },
           { path: "rivalries", label: "Rivalries" },
           { path: "trades", label: "Trades" },
           ...(VETO_LOG_LEAGUES.has(league.id) ? [{ path: "vetoes", label: "Veto Log" }] : []),
-          { path: "drafts", label: "Draft" },
-          { path: "resources", label: "Resources" },
+          ...(OWN_LEAGUE?.slug === league.id ? [] : [{ path: "drafts", label: "Draft" }, { path: "resources", label: "Resources" }]),
         ]} /> : null}
       </div>
     </div>

@@ -23,7 +23,7 @@ The public demo has four made-up leagues, one per league type: **Redraft** (Lake
 
 Go to **[long-snap.vercel.app/get-started/setup](https://long-snap.vercel.app/get-started/setup)**, paste your Sleeper league ID, answer your house rules, and click **Deploy to Vercel**. The step-by-step guide, with a picture for every click, is in [`docs/GUIDE.md`](docs/GUIDE.md).
 
-Today's edition (Basic) gives your league the dashboard, matchups, standings seeded your way, power rankings, playoff odds, weekly recaps, trades and GM tools. League history pages, the rule book and votes, and the veto log for your own league are coming next.
+Today's edition (Basic) gives your league the dashboard, matchups, standings seeded your way, power rankings, playoff odds, weekly recaps, trades, GM tools, and league history, owner pages, records and rivalries for every season your league has been on Sleeper. The rule book with votes and the veto log for your own league are coming next.
 
 ## Run the demo yourself
 

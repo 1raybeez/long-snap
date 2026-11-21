@@ -21,6 +21,7 @@ import { sitePageHref } from "@/lib/links";
 import { nflGameLive } from "@/lib/nflLive";
 import { MatchupRefresh } from "../../hq/packages/league-tiles/src/matchup-refresh.tsx";
 
+import { OWN_LEAGUE } from "@/lib/ownLeague";
 export const revalidate = 60;
 
 export function generateStaticParams() {
@@ -79,7 +80,7 @@ export default async function LeagueHome({ params }: { params: Promise<{ league:
       <>
         <LeagueNav league={league} active="home" />
         {live ? <MatchupRefresh seconds={45} /> : null}
-        <HomeTiles tiles={tiles} theme={league.theme} hide={data?.sleeperOnly ? ["REIGNING_CHAMPION", "LEAGUE_VOICE", "LEAGUE_FINANCES"] : undefined} eyebrow={league.name} title={`${league.season} League Dashboard`} top={<>{data?.birthdays ? <BirthdayBanner leagueName={league.name} apiPath={`/api/birthdays?league=${data.birthdays}`} /> : null}<ColumnBanner league={league} /><FlyerBanner league={league} /></>} />
+        <HomeTiles tiles={tiles} theme={league.theme} hide={data?.sleeperOnly ? ["REIGNING_CHAMPION", "LEAGUE_VOICE", "LEAGUE_FINANCES"] : OWN_LEAGUE?.slug === league.id ? ["LEAGUE_VOICE", "LEAGUE_FINANCES"] : undefined} eyebrow={league.name} title={`${league.season} League Dashboard`} top={<>{data?.birthdays ? <BirthdayBanner leagueName={league.name} apiPath={`/api/birthdays?league=${data.birthdays}`} /> : null}<ColumnBanner league={league} /><FlyerBanner league={league} /></>} />
       </>
     );
   }

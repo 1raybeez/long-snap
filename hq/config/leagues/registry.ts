@@ -164,7 +164,7 @@ const demoLeague = (key: (typeof DEMO_KEYS)[number]) =>
 // A commissioner's own league (LONGSNAP_LEAGUE, written by the setup page): it replaces the demo leagues.
 const OWN_FORMAT = { redraft: "REDRAFT", keeper: "KEEPER", auction: "AUCTION_KEEPER", dynasty: "DYNASTY" } as const;
 const ownLeague = (l: OwnLeague): LeagueRegistryEntry => ({
-  ...league(l.slug, l.name, l.short, OWN_FORMAT[l.type], "TOOL_ONLY", false, demoCapabilities,
+  ...league(l.slug, l.name, l.short, OWN_FORMAT[l.type], "FULL_LEAGUE_EXPERIENCE", true, demoCapabilities,
     seasonsFromMap(l.slug, OWN_FORMAT[l.type], Object.fromEntries(Object.entries(l.seasons).map(([y, id]) => [Number(y), id])), ownSeasonYears(l)[0]!).filter((s) => s.season <= ownCurrentSeason(l))),
   currentSeason: ownCurrentSeason(l),
 });

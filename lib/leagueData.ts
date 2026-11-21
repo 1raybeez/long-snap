@@ -111,7 +111,7 @@ const DATA: Record<string, LeagueData> = {
   "ironworks-dynasty": demoSite({ league: iwLeague, games: iwGames, history: iwHistory, people: iwPeople }, demoRules("maxPf", "Ironworks rookie draft: the six teams that miss the playoffs pick 1–6 by Max PF, lowest first. Playoff teams pick 7–12 by playoff finish.", true), "dynasty"),
 };
 
-const SLEEPER_ONLY_IDS: ReadonlySet<string> = new Set<string>(OWN_LEAGUE ? [OWN_LEAGUE.slug] : []);
+const SLEEPER_ONLY_IDS: ReadonlySet<string> = new Set<string>([]);
 const SLEEPER_ONLY: Record<string, string> = Object.fromEntries(
   HQ_LEAGUE_REGISTRY.leagues.filter((l) => SLEEPER_ONLY_IDS.has(l.id)).flatMap((l) => {
     const id = l.seasons.find((s) => s.season === l.currentSeason)?.providerBindings.find((b) => b.provider === "SLEEPER")?.externalLeagueId;
@@ -124,6 +124,7 @@ export function isSleeperOnly(leagueId: string): boolean {
 }
 
 export function leagueData(leagueId: string): LeagueData | null {
+  if (OWN_LEAGUE && leagueId === OWN_LEAGUE.slug) return ownCache?.data ?? ({} as LeagueData); // pages read it through loadLeagueData
   return DATA[leagueId] ?? null;
 }
 
@@ -185,7 +186,21 @@ type LiveExport = { league?: { season?: number; managerNames?: Record<string, st
  * The league's data, refreshed from its current site's /api/platform/export (hourly) so owner pages, history and
  * rivalries stay current until the switch-over. Falls back to the copy exported into HQ if the site can't be read.
  */
+let ownCache: { at: number; data: LeagueData | null; pending?: Promise<LeagueData | null> } | null = null;
+/** The commissioner's own league, built from its Sleeper seasons and kept for three hours. */
+async function ownLeagueData(): Promise<LeagueData | null> {
+  const fresh = ownCache && Date.now() - ownCache.at < 3 * 3600_000;
+  if (ownCache?.data && fresh) return ownCache.data;
+  if (ownCache?.pending) return ownCache.pending;
+  const pending = import("./ownLeagueData.ts").then((m) => m.buildOwnLeagueData(OWN_LEAGUE!)).catch(() => null);
+  ownCache = { at: ownCache?.at ?? 0, data: ownCache?.data ?? null, pending };
+  const data = await pending;
+  ownCache = { at: Date.now(), data: data ?? ownCache.data };
+  return ownCache.data;
+}
+
 export async function loadLeagueData(leagueId: string, siteUrl: string | null): Promise<LeagueData | null> {
+  if (OWN_LEAGUE && leagueId === OWN_LEAGUE.slug) return ownLeagueData();
   const base = DATA[leagueId];
   if (!base && SLEEPER_ONLY[leagueId]) return sleeperOnlyData(SLEEPER_ONLY[leagueId]);
   if (!base) return null;

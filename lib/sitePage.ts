@@ -1,8 +1,15 @@
 import type { PlatformLeague } from "./platformLeagues.ts";
 import { DEMO_SLUGS } from "./demo/demoLeagues.ts";
+import { OWN_LEAGUE } from "./ownLeague.ts";
 import { LCC_ENGINE, RIVER_CITY_ENGINE, RVA_ENGINE } from "./leagueFeatures.ts";
 
 export async function sitePage<T>(league: PlatformLeague, view: string, params: Record<string, string | number> = {}): Promise<T | null> {
+  if (OWN_LEAGUE && league.id === OWN_LEAGUE.slug) {
+    if (view !== "season") return null;
+    const [{ loadLeagueData }, { ownSeasonPage }] = await Promise.all([import("./leagueData.ts"), import("./ownLeagueData.ts")]);
+    const d = await loadLeagueData(league.id, null);
+    return d ? (ownSeasonPage(d, Number(params.season)) as T | null) : null;
+  }
   if (DEMO_SLUGS.includes(league.id)) {
     const { demoSitePage } = await import("./demo/demoPages.ts");
     return demoSitePage<T>(league.id, view, params);
