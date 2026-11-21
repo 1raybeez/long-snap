@@ -12,7 +12,7 @@ export default function GetStartedPage() {
         <p className="ls-eyebrow">Get your own site</p>
         <h1 className="ls-h1">Run Long Snap for your league.</h1>
         <p className="ls-lead">Free, with no paid plan, and nothing to code. You run your own copy on your own free accounts, so your league&rsquo;s data stays with you. The guide has a picture for every click.</p>
-        <div className="ls-btns"><Link className="ls-btn" href="/get-started/setup">Set up your league</Link><Link className="ls-btn ghost" href="/get-started/practice">Practice with a made-up league</Link></div>
+        <div className="ls-btns"><Link className="ls-btn" href="/get-started/setup">Set up your league</Link><Link className="ls-btn ghost" href="/get-started/practice">Practice with a made-up league</Link><a className="ls-btn ghost" href="https://github.com/1raybeez/long-snap/blob/main/docs/GUIDE.md">Guide with pictures</a></div>
 
         <h2 className="ls-h2">Two editions</h2>
         <div className="ls-grid2">

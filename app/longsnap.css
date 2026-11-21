@@ -100,3 +100,9 @@
 .wz-page small { display: block; color: #78716c; }
 .wz-done { text-align: center; padding: 26px; }
 .wz-check { width: 64px; height: 64px; border-radius: 50%; background: #16a34a; color: #fff; display: grid; place-items: center; font-size: 34px; margin: 0 auto 12px; }
+@media (max-width: 640px) {
+  .ls-bar { position: static; }
+  .ls-bar-in { gap: 8px; padding: 8px 12px; }
+  .ls-tag { display: none; }
+  .ls-switch a { padding: 4px 8px; font-size: 12px; }
+}
