@@ -90,4 +90,6 @@ Run the setup again at **long-snap.vercel.app/get-started/setup** and copy the n
 
 ## A new season
 
-Nothing to do. When your league renews on Sleeper, your site finds the new season by itself (within about a day) and keeps all your history.
+Nothing to do, **as long as you renew your league in Sleeper.** After the season, Sleeper lets the commissioner renew the league for next season, keeping the same league and owners. Your site then finds the new season by itself, within about a day, and keeps all your history.
+
+> **Important for commissioners:** always **renew** your league in Sleeper. If you start a brand-new league in Sleeper instead, Sleeper doesn't connect it to last season, so your site can't find it. If that happens, run the setup again with the new league ID (see "Changing something later" above) and your site picks it up.

@@ -214,6 +214,7 @@ export function RealSetup() {
           <div className="ls-btns"><a className="ls-btn dark" href={deployHref} target="_blank" rel="noreferrer">▲ Deploy to Vercel</a></div>
           <p className="wz-label" style={{ marginTop: 20 }}>Already have a site and want to change it?</p>
           <p className="ls-body">In Vercel, open your project → <b>Settings</b> → <b>Environment Variables</b> → <b>LONGSNAP_LEAGUE</b> → <b>Edit</b>, paste the new settings, <b>Save</b>, then <b>Deployments</b> → the newest one → <b>Redeploy</b>.</p>
+          <div className="ls-callout"><b>Each new season:</b> renew your league in Sleeper instead of starting a new one. Your site then follows the new season by itself and keeps all your history. If you start a brand-new league in Sleeper instead, Sleeper doesn&rsquo;t link it to last season, so come back here and run the setup with the new ID.</div>
           <div className="wz-nav">{back(4)}<span /></div>
         </>)}
       </section>
