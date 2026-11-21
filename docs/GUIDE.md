@@ -74,6 +74,8 @@ Vercel opens in a new tab.
 
 ![Paste and deploy](guide/12-vercel-paste.png)
 
+Vercel may ask you to **Verify Your Identity**: click **Send Code**, check your email, and type in the 6-digit code.
+
 ## 9. Your site is live
 
 In about two minutes Vercel says **Deployed to Production**. Click **Visit** to open your site. Its address is under **Domains** on your project page, like `your-league.vercel.app`. Share it with your league.
